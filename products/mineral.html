@@ -1,0 +1,2890 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <title>Сэндвич-панели с минеральной ватой</title>
+</head>
+
+<body>
+
+    <div class="page-shadow"></div>
+
+    <div class="toggleHeader" style="transform: translateY(60vh);"></div>
+    <header class="header d-none-lg header--white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__wrapper">
+                        <a href="/" class="header__logo-block">
+                            <div class="header__logo-icon"></div>
+                            <div class="header__logo"></div>
+                        </a>
+                        <div class="header__menu">
+                            <a href="/products.html#mineralnaya-vata">
+                                <div class="header__catalog-btn">
+                                    <!-- <input id="header__catalog-toggle" type="checkbox" /> -->
+                                    <div class="header__arrow"></div>
+                                    <p class="font-t2 color--secondary">Каталог</p>
+                                </div>
+                            </a>
+                            <a class="header__li font-t2" href="/events.html">Новости</a>
+                            <a class="header__li font-t2" href="/production.html">Производство</a>
+                            <a class="header__li font-t2" href="/about.html">О компании</a>
+                            <!-- <a class="header__li font-t2" href="/products.html#mineralnaya-vata">Продукция</a> -->
+                            <a class="header__li font-t2" href="/contacts.html">Контакты</a>
+                            <a class="header__li font-t2" href="/objects.html">Объекты</a>
+                        </div>
+                        <div class="header__right">
+                            <!-- <div class="search-icon" onclick="toggleSearch()"></div>
+                            <div class="search-input-container">
+                                <input type="text" class="search-input" placeholder="Поиск">
+                            </div> -->
+                            <div class="search">
+                                <input class="font-t2" type="text" placeholder="">
+                                <div>
+                                    <svg>
+                                        <use xlink:href="#path">
+                                    </svg>
+                                </div>
+                            </div>
+                                
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+                                    <path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+                                </symbol>
+                            </svg>
+                                
+                            <div class="header__contact">
+                                <a class="header__tel tel-geo font-t2 color--accent" href=""></a>
+                                <div class="city-geo-block">
+                                    <p class="header__city city-geo font-t1 color--accent"></p>
+                                    <div class="city-geo__icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__bottom">
+                        <a class="font-t2" href="/products/mineral.html">Сэндвич панели c минеральной
+                            ватой</a>
+                        <a class="font-t2" href="/products/penopolistirol.html">Сэндвич панели c
+                            пенополистиролом</a>
+                        <a class="font-t2" href="/products/pir-pur.html">Сэндвич панели c PIR/PUR</a>
+                        <a class="font-t2" href="/products/painted-steel.html">Окрашенная рулонная сталь</a>
+                        <a class="font-t2" href="/products/urban.html">Urban</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="technostyle-products sp-v-mint">
+            <div class="container">
+                <div class="technostyle-products__wrapper">
+                    <div class="col-4">
+                        <div class="technostyle-products__menu">
+                            <div data-id="sandwich-paneli"
+                                class="technostyle-products__category-product font-s2 color-block--primary chip-block__blue-active">
+                                <p>Сэндвич-панели</p>
+                            </div>
+                            <div data-id="ready"
+                                class="technostyle-products__category-product font-s2 color-block--primary">
+                                <p>Готовые решения</p>
+                            </div>
+                            <div data-id="other"
+                                class="technostyle-products__category-product font-s2 color-block--primary">
+                                <p>Другая продукция</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="technostyle-products__block">
+
+                            <a data-id="sandwich-paneli" href="/products/mineral.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />c минеральной ватой</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_minvata.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели с&nbsp;наполнителем из&nbsp;негорючего,
+                                        устойчивого к&nbsp;механическим повреждениям, экологичного, негигроскопичного
+                                        материала, с&nbsp;низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/penopolistirol.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />с пенополистиролом</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_penopolistirol.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели из лёгкого, экологичного, негигроскопичного,
+                                        химически устойчивого, материала с низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/pir-pur.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />с PIR/PUR наполнителем</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_pirpur.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели наполненные материалом с низкой
+                                        теплопроводностью, долговечностью, биологической стойкостью, не чувствителен к
+                                        перепадам температур</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/soundproofing.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Звукоизоляционные<br />сэндвич-панели</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_soundproof.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели, которые выполняют функцию ограждающих
+                                        конструкций, а перфорация стальных обшивок дает уникальный эстетический эффект</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/ventilated.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Вентилируемые<br />сэндвич-панели</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_vent.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели для утепления наружных и внутренних стен,
+                                        перегородок. Используются в строительстве и реконструкции различных видов зданий</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/seam-roofing.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Фальцевая<br />кровля</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_seam_roof.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели с&nbsp;наполнителем из&nbsp;негорючего,
+                                        устойчивого к&nbsp;механическим повреждениям, экологичного, негигроскопичного
+                                        материала, с&nbsp;низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="other" href="/products/painted-steel.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Окрашенная<br />рулонная сталь</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_painted_steel.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Сталь с высококачественным защитно-декоративного
+                                        лакокрасочным покрытием. По ГОСТ 34180-2017 и ТУ</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="other" href="/products/other.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Фасонные элементы<br />и комплектующие</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_accessories.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Предназначены для герметизации и тепловой изоляции,
+                                        предотвращают проникновение влаги через щели, выполняют декоративную функцию</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="ready" href="/products/partitions.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Противопожарные<br />перегородки</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_fire_fighting.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели наполненные материалом с низкой
+                                        теплопроводностью, долговечностью, биологической стойкостью, не чувствителен к
+                                        перепадам температур</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="ready" href="/products/urban.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Модульный<br />фасад Urban</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_urban.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Инновационная ограждающая конструкция зданий,
+                                        позволяющая реализовывать самые разнообразные архитектурные проекты</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="ready" href="/products/lskp.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Легкосбрасываемые<br />КОНСТРУКЦИИ (ЛСК-П)</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_easily_discarder.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Выполняют функцию противовзрывных предохранительных
+                                        конструкций для сохранения жизни и здоровья персонала, оборудования, конструкций</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <header class="header-mob">
+
+        <div class="header-mob__top color-block--primary">
+            <div class="container">
+                <div class="col">
+                    <div class="header-mob__band">
+
+                        <div class="header-mob__burger">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <a href="/">
+                            <div class="header-mob__logo"></div>
+                        </a>
+
+                        <div></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mob__block">
+
+            <div class="color-block--secondary">
+                <div class="container">
+                    <div class="col">
+                        <div class="city-geo-block">
+                            <div class="city-geo__icon">
+                                <img loading="lazy" src="/image/city-geo-icon.svg" alt="">
+                            </div>
+                            <p class="city-geo font-t1 color--accent"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mob__block-info sp-t-light-blue">
+                <div class="container">
+                    <div class="col">
+
+                        <div class="header-mob__button color-block--accent">
+                            <input id="mob-catalog__toggle" type="checkbox" />
+                            <p class="font-t1 color--secondary">Каталог</p>
+                            <div class="header-mob__icon-btn"></div>
+                        </div>
+
+                        <div class="header-mob__menu sp-v-mint">
+                            <a class="header-mob__li font-t2 color--accent" href="/events.html">Новости</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/production.html">Производство</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/about.html">О компании</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products.html#mineralnaya-vata">Продукция</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/contacts.html">Контакты</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/objects.html">Объекты</a>
+                            <a class="tel-geo header-mob__li font-t2 color--accent" href=""></a>
+                        </div>
+
+                        <div class="header-mob__catalog">
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/mineral.html">Cэндвич-панели c минеральной ватой</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/penopolistirol.html">Cэндвич-панели c
+                                пенополистиролом</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/pir-pur.html">Cэндвич-панели c PIR/PUR наполнителем</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/soundproofing.html">Звукоизоляционные сэндвич-панели</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/ventilated.html">Вентилируемые сэндвич-панели</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/seam-roofing.html">Фальцевая
+                                кровля</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/painted-steel.html">Окрашенная рулонная сталь</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/other.html">Фасонные
+                                элементы и комплектующие</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/partitions.html">Противопожарные перегородки</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/urban.html">Модульный фасад
+                                Urban</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/lskp.html">Легкосбрасываемые
+                                КОНСТРУКЦИИ (ЛСК-П)</a>
+                            <!-- <a class="header-mob__li font-t2 color--accent" href="#"></a> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="header-mob-height"></div>
+
+    <!-- Выпадающий список городов -->
+    <div class="city">
+        <div class="color-block--primary" style="width: 100%;">
+            <div class="city__wrapper">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="font-h2 sp-b-purple">Выберите ваше местоположение</h2>
+                        <ul class="ul-city">
+                            <li class="font-t1 color--tertiary">Астрахань</li>
+                            <li class="font-t1 color--tertiary">Брянск</li>
+                            <li class="font-t1 color--tertiary">Владимир</li>
+                            <li class="font-t1 color--tertiary">Волгоград</li>
+                            <li class="font-t1 color--tertiary">Вологда</li>
+                            <li class="font-t1 color--tertiary">Воронеж</li>
+                            <li class="font-t1 color--tertiary">Екатеринбург</li>
+                            <li class="font-t1 color--tertiary">Иваново</li>
+                            <li class="font-t1 color--tertiary">Ижевск</li>
+                            <li class="font-t1 color--tertiary">Йошкар-Ола</li>
+                            <li class="font-t1 color--tertiary">Казань</li>
+                            <li class="font-t1 color--tertiary">Калининград</li>
+                            <li class="font-t1 color--tertiary">Калуга</li>
+                            <li class="font-t1 color--tertiary">Киров</li>
+                            <li class="font-t1 color--tertiary">Краснодар</li>
+                            <li class="font-t1 color--tertiary">Красноярск</li>
+                            <li class="font-t1 color--tertiary">Курск</li>
+                            <li class="font-t1 color--tertiary">Липецк</li>
+                            <li class="font-t1 color--tertiary">Москва</li>
+                            <li class="font-t1 color--tertiary">Москва</li>
+                            <li class="font-t1 color--tertiary">Набережные Челны</li>
+                            <li class="font-t1 color--tertiary">Нижний Новгород</li>
+                            <li class="font-t1 color--tertiary">Новосибирск</li>
+                            <li class="font-t1 color--tertiary">Оренбург</li>
+                            <li class="font-t1 color--tertiary">Пенза</li>
+                            <li class="font-t1 color--tertiary">Пермь</li>
+                            <li class="font-t1 color--tertiary">Подольск</li>
+                            <li class="font-t1 color--tertiary">Ростов-на-Дону</li>
+                            <li class="font-t1 color--tertiary">Рязань</li>
+                            <li class="font-t1 color--tertiary">Самара</li>
+                            <li class="font-t1 color--tertiary">Санкт-Петербург</li>
+                            <li class="font-t1 color--tertiary">Саранск</li>
+                            <li class="font-t1 color--tertiary">Саратов</li>
+                            <li class="font-t1 color--tertiary">Севастополь</li>
+                            <li class="font-t1 color--tertiary">Симферополь</li>
+                            <li class="font-t1 color--tertiary">Сочи</li>
+                            <li class="font-t1 color--tertiary">Ставрополь</li>
+                            <li class="font-t1 color--tertiary">Тверь</li>
+                            <li class="font-t1 color--tertiary">Тольятти</li>
+                            <li class="font-t1 color--tertiary">Томск</li>
+                            <li class="font-t1 color--tertiary">Тула</li>
+                            <li class="font-t1 color--tertiary">Тюмень</li>
+                            <li class="font-t1 color--tertiary">Ульяновск</li>
+                            <li class="font-t1 color--tertiary">Уфа</li>
+                            <li class="font-t1 color--tertiary">Чебоксары</li>
+                            <li class="font-t1 color--tertiary">Челябинск</li>
+                            <li class="font-t1 color--tertiary">Ярославль</li>
+                            <li class="font-t1 color--tertiary">Минск (Беларусь)</li>
+                            <li class="font-t1 color--tertiary">Нур-Султан (Казахстан)</li>
+                            <li class="font-t1 color--tertiary">Нижний Тагил</li>
+                            <li class="font-t1 color--tertiary">Смоленск</li>
+                            <li class="font-t1 color--tertiary">Орёл</li>
+                            <li class="font-t1 color--tertiary">Тамбов</li>
+                            <li class="font-t1 color--tertiary">Архангельск</li>
+                            <li class="font-t1 color--tertiary">Омск</li>
+                            <li class="font-t1 color--tertiary">Иркутск</li>
+                            <li class="font-t1 color--tertiary">Хабаровск</li>
+                            <li class="font-t1 color--tertiary">Барнаул</li>
+                            <li class="font-t1 color--tertiary">Владивосток</li>
+                            <li class="font-t1 color--tertiary">Махачкала</li>
+                            <li class="font-t1 color--tertiary">Кемерово</li>
+                            <li class="font-t1 color--tertiary">Чита</li>
+                            <li class="font-t1 color--tertiary">Волжский</li>
+                            <li class="font-t1 color--tertiary">Череповец</li>
+                            <li class="font-t1 color--tertiary">Владикавказ</li>
+                            <li class="font-t1 color--tertiary">Грозный</li>
+                            <li class="font-t1 color--tertiary">Мурманск</li>
+                            <li class="font-t1 color--tertiary">Новороссийск</li>
+                            <li class="font-t1 color--tertiary">Нижнекамск</li>
+                            <li class="font-t1 color--tertiary">Нальчик</li>
+                            <li class="font-t1 color--tertiary">Великий Новгород</li>
+                            <li class="font-t1 color--tertiary">Псков</li>
+                            <li class="font-t1 color--tertiary">Гатчина</li>
+                            <li class="font-t1 color--tertiary">Колпино</li>
+                            <li class="font-t1 color--tertiary">Кингисепп</li>
+                            <li class="font-t1 color--tertiary">Темрюк</li>
+                        </ul>
+                        <div class="city__close"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumb breadcrumb--position d-none-md">
+        <div class="container">
+            <div class="col">
+                <nav class="">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link font-d" href="/">Главная</a>
+                            <p>/</p>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link font-d" href="/products.html">Продукция</a>
+                            <p>/</p>
+                        </li>
+                        <li class="breadcrumb__item breadcrumb__item--last">
+                            <a class="breadcrumb__link font-d" href="">Стеновые сендвич-панели</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Обложка -->
+    <section class="product-cover">
+        <div class="product-cover__image">
+            <img loading="lazy" src="/image/cover-sendvich-paneli-s-mineralnoy-vatoy.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="product-cover__info col-8 col-md-4 col-sm-3">
+                    <h1 class="product-cover__title font-h1 color--secondary text-align-center sp-b-dark-blue">
+                        Сэндвич-панели с&nbsp;минеральной ватой</h1>
+                    <p class="product-cover__desk font-t1 color--secondary text-align-center sp-b-dark-blue">Материал
+                        идеальный для
+                        утепления за счет
+                        низкой теплопроводности. Служит более 40 лет, устойчив к
+                        механическим повреждениям и не впитывает в себя влагу. Безопасен и экологичен.</p>
+                    <div class="product-cover__button button-block button-block__center">
+                        <a href="">
+                            <div class="button-block__white" style="opacity: 0.7;">
+                                <p class="font-s1 font-s1--size color--accent">Заказать расчет</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="stenovye"></div>
+    <div id="krovelnye"></div>
+    <div id="uglovye"></div>
+
+    <!-- Чипы -->
+    <section id="chips" class="product-filter sp-t-fuchsia sp-b-mint">
+        <div class="container">
+            <div class="col">
+                <div class="product-filter__wrapper">
+
+                    <!-- orange-chip arrow -->
+                    <!-- <div class="chip-block">
+                        <a href="" id="">
+                            <div class="chip-block__orange-arrow">
+                                <div class="chip-block__icon">
+                                    <img loading="lazy" src="/image/button-icon-arrow-orange.svg" alt="">
+                                </div>
+
+                                <p class="font-t2 font-t2--size color--brend-orange">Вы можете выбрать...</p>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <div class="col-5 col-lg-6 col-md-6 col-sm-3">
+                        <div class="product-filter__chips-block">
+
+                            <div class="shadow-white"></div>
+
+                            <div class="swiper product-filter-mySwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <!-- blue-chip -->
+                                        <div class="chip-block">
+                                            <a href="#stenovye" data-id="stenovye">
+                                                <div class="chip-block__orange">
+                                                    <p class="font-t2 font-t2--size color--primary">Стеновые</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <!-- blue-chip -->
+                                        <div class="chip-block">
+                                            <a href="#krovelnye" data-id="krovelnye">
+                                                <div class="chip-block__orange">
+                                                    <p class="font-t2 font-t2--size color--primary">Кровельные</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <!-- blue-chip -->
+                                        <div class="chip-block">
+                                            <a href="#uglovye" data-id="uglovye">
+                                                <div class="chip-block__orange">
+                                                    <p class="font-t2 font-t2--size color--primary">Угловые</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- POPUP -->
+            <div class="product-filter-popup color-block--primary">
+                <div class="product-filter-popup-close">
+                    <img loading="lazy" src="/image/popup-close.svg" alt="">
+                </div>
+                <div class="row">
+                    <h2 class="font-h2 color--brend-orange sp-b-opacity-green">Технические и эстетические характеристики
+                    </h2>
+                </div>
+
+                <div class="row sp-b-opacity-green">
+                    <div class="swiper product-filter-popup-mySwiper">
+                        <h3 class="font-h3 sp-b-light-blue">Профилирование</h3>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">TRADITIONAL 11 RIB</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">TRADITIONAL 9 RIB</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">TRADITIONAL 5 RIB</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">FLAT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="swiper product-filter-popup-mySwiper">
+                        <h3 class="font-h3 sp-b-light-blue">Замковые соединения</h3>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img-lock-1.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">SECRET-FIX</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img-lock-2.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">Z-LOCK</p>
+                                <p class="font-d">лабиринтный стык</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-filter__image">
+                                    <img loading="lazy" src="/image/product-filter-img-lock-3.jpg" alt="">
+                                </div>
+                                <p class="font-s2 sp-t-light-blue">Z-LOCK</p>
+                                <p class="font-d">прямой стык</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Преимущества - слайдер и изображение -->
+    <section class="top-advantage sp-b-orange">
+        <div class="container">
+            <div class="top-advantage__wrapper">
+                <div class="col-5 col-md-4 col-sm-3">
+                    <div class="top-advantage__image">
+                        <img loading="lazy" class="product-item" data-id="stenovye" src="/image/top-advantage-image-stenovye.png"
+                            alt="">
+                        <img loading="lazy" class="product-item" data-id="krovelnye" src="/image/top-advantage-image-krovelnye.png"
+                            alt="">
+                        <img loading="lazy" class="product-item" data-id="uglovye" src="/image/top-advantage-image-uglovye.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 col-lg-1 d-none-md"></div>
+                <div class="col-5 col-lg-6 col-md-6 col-sm-3">
+                    <!-- <div class="swiper top-advantage-mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product-item" data-id="stenovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Широкий выбор покрытий для
+                                        идеального оттенка</h3>
+                                    <p class="font-t1">Ваши строения будут выглядеть органично в любой обстановке.
+                                        Выбирайте ваш идеальный оттенок для полимерного покрытия панелей.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="stenovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Экономичное обновление
+                                        фасадов</h3>
+                                    <p class="font-t1">Отдельные изношенные элементы фасада можно заменить — обновите
+                                        вид всего здания при минимальных вложениях в сэндвич-панели с минватой.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="stenovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Минимум времени на сборку
+                                        конструкции</h3>
+                                    <p class="font-t1">Быстровозводимые сэндвич-панели соединяются и фиксируются
+                                        замковым соединением. Продолжайте работы на объекте сразу после сборки —
+                                        материал не дает усадку. </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="stenovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Соответствуют пунктам ГОСТ
+                                        32603-2021</h3>
+                                    <p class="font-t1">С ними легко обеспечить утепление, а также получить нужные для
+                                        объекта технические и механические свойства для эффективной эксплуатации.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="krovelnye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Крыша устойчивая к
+                                        климатическим факторам</h3>
+                                    <p class="font-t1">Даже сильный ветер не сорвет кровли, поскольку она имеет высокую
+                                        несущую способность. Кровельные сэндвич-панели — устойчивы к механическому
+                                        воздействию.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="krovelnye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Экономия времени и сил на
+                                        монтаже</h3>
+                                    <p class="font-t1">Используйте материал в любое время года: панели универсальны и
+                                        устойчивы к любым погодным условиям.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="krovelnye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Высокая устойчивость к
+                                        действию огня</h3>
+                                    <p class="font-t1">Делает кровельные панели максимально пожаробезопасными — у вас не
+                                        будет претензий от пожарной инспекции. Панели относятся к группе горючести Г1.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="krovelnye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Долговечность вашей
+                                        постройки</h3>
+                                    <p class="font-t1">Прослужат вам минимум 40 лет в силу своей прочности,
+                                        износостойкости и устойчивости к колебаниям температур, влаге, механическим
+                                        воздействиям, УФ-излучения и т.д.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="uglovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Отсутствие стыков
+                                        между угловыми панелями</h3>
+                                    <p class="font-t1">Соответственно не появляется зазор, в который могла бы попадать
+                                        влага или холодный воздух. В здании будет одинаково тепло и комфортно при любой
+                                        погоде.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="uglovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Сократите время на сборку
+                                        фасада</h3>
+                                    <p class="font-t1">Это уже готовое решение, чтобы оформить быстро и без
+                                        дополнительных элементов углы построек.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product-item" data-id="uglovye">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Функциональность и
+                                        декоративные свойства</h3>
+                                    <p class="font-t1">Не только функциональны, но и декоративны. Улучшите внешний вид
+                                        объекта, повысив его эстетичность с угловыми сэндвич-панелями.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> -->
+
+                    <div class="swiper top-advantage-mySwiper product-item" data-id="stenovye">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Широкий выбор покрытий для
+                                        идеального оттенка</h3>
+                                    <p class="font-t1">Ваши строения будут выглядеть органично в любой обстановке.
+                                        Выбирайте ваш идеальный оттенок для полимерного покрытия панелей.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Экономичное обновление
+                                        фасадов</h3>
+                                    <p class="font-t1">Отдельные изношенные элементы фасада можно заменить — обновите
+                                        вид всего здания при минимальных вложениях в сэндвич-панели с минватой.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Минимум времени на сборку
+                                        конструкции</h3>
+                                    <p class="font-t1">Быстровозводимые сэндвич-панели соединяются и фиксируются
+                                        замковым соединением. Продолжайте работы на объекте сразу после сборки —
+                                        материал не дает усадку. </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Соответствуют пунктам ГОСТ
+                                        32603-2021</h3>
+                                    <p class="font-t1">С ними легко обеспечить утепление, а также получить нужные для
+                                        объекта технические и механические свойства для эффективной эксплуатации.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper top-advantage-mySwiper product-item" data-id="krovelnye">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Крыша устойчивая к
+                                        климатическим факторам</h3>
+                                    <p class="font-t1">Даже сильный ветер не сорвет кровли, поскольку она имеет высокую
+                                        несущую способность. Кровельные сэндвич-панели — устойчивы к механическому
+                                        воздействию.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Экономия времени и сил на
+                                        монтаже</h3>
+                                    <p class="font-t1">Используйте материал в любое время года: панели универсальны и
+                                        устойчивы к любым погодным условиям.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Высокая устойчивость к
+                                        действию огня</h3>
+                                    <p class="font-t1">Делает кровельные панели максимально пожаробезопасными — у вас не
+                                        будет претензий от пожарной инспекции. Панели относятся к группе горючести Г1.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Долговечность вашей
+                                        постройки</h3>
+                                    <p class="font-t1">Прослужат вам минимум 40 лет в силу своей прочности,
+                                        износостойкости и устойчивости к колебаниям температур, влаге, механическим
+                                        воздействиям, УФ-излучения и т.д.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper top-advantage-mySwiper product-item" data-id="uglovye">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Отсутствие стыков
+                                        между угловыми панелями</h3>
+                                    <p class="font-t1">Соответственно не появляется зазор, в который могла бы попадать
+                                        влага или холодный воздух. В здании будет одинаково тепло и комфортно при любой
+                                        погоде.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Сократите время на сборку
+                                        фасада</h3>
+                                    <p class="font-t1">Это уже готовое решение, чтобы оформить быстро и без
+                                        дополнительных элементов углы построек.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="top-advantage__card color-block--primary">
+                                    <h3 class="font-h3 sp-b-light-blue color--brend-orange">Функциональность и
+                                        декоративные свойства</h3>
+                                    <p class="font-t1">Не только функциональны, но и декоративны. Улучшите внешний вид
+                                        объекта, повысив его эстетичность с угловыми сэндвич-панелями.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="top-advantage__bottom-line sp-t-pastel color-block--brend-orange d-none-md"></div>
+    </section>
+
+    <!-- Соединения -->
+    <!-- <section class="connection-types sp-b-orange">
+        <div class="container">
+            <div class="connection-types__wrapper">
+                <div class="col-1 d-none-lg"></div>
+                <div class="col-4 col-lg-5 col-sm-3">
+                    <div class="connection-types__image">
+                        <img loading="lazy" src="/image/connection-types-profiling.jpg" alt="">
+                    </div>
+                    <div class="connection-types__info">
+                        <h2 class="font-h2 color--brend-orange">Профилирование</h2>
+                        <p class="font-h3 sp-t-burgundy">TRAPEZIODAL 50-50</p>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-4 col-lg-5 col-sm-3 sp-t-fuchsia">
+                    <div class="connection-types__image">
+                        <img loading="lazy" src="/image/connection-types-lock.jpg" alt="">
+                    </div>
+                    <div class="connection-types__info">
+                        <h2 class="font-h2 color--brend-orange">Замковое соединение</h2>
+                        <p class="font-h3 sp-t-burgundy">TRAPEZIODAL 50-50</p>
+                        <p class="font-t1">ROOF-LOCK – прямой стык</p>
+                    </div>
+                </div>
+                <div class="col-1 d-none-lg"></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Соединения -->
+    <section>
+        <!-- Соединения v2 -->
+        <div class="quality-system-v2 sp-b-yellow product-item" data-id="stenovye">
+            <div class="container">
+                <div class="col">
+                    <div class="swiper quality-system-v2-mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">VEE RIB (100)</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_1.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">MICRO RIB 20</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_2.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">TRAPEZIODAL 50-50</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_3.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">TRADITIONAL 11 RIB</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_4.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">VEE RIB (150)</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_5.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">MICRO RIB 25</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_6.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">FLAT</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_7.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">TRADITIONAL 9 RIB</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_8.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">VEE RIB (200)</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_9.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">MICRO RIB 30</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_10.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">TRADITIONAL 5 RIB</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_11.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Соединения v2 reverse -->
+        <div class="quality-system-reverse-v2 sp-b-orange product-item" data-id="stenovye">
+            <div class="container">
+                <div class="col">
+                    <div class="swiper quality-system-v2-mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-reverse-v2__wrapper">
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-reverse-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_12.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-reverse-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-reverse-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Замковое соединение</h2>
+                                        <h3 class="font-h3 color--secondary sp-b-dark-purple">Z-LOCK</h3>
+                                        <p class="font-t1 color--secondary">Прямой стык</p>
+                                        <div
+                                            class="quality-system-reverse-v2__tongue-left color-block--accent d-none-md">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-reverse-v2__wrapper">
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-reverse-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_13.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-reverse-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-reverse-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Замковое соединение</h2>
+                                        <h3 class="font-h3 color--secondary sp-b-dark-purple">Z-LOCK</h3>
+                                        <p class="font-t1 color--secondary">Лабиринтный стык</p>
+                                        <div
+                                            class="quality-system-reverse-v2__tongue-left color-block--accent d-none-md">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-reverse-v2__wrapper">
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-reverse-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_minvata_stenovye_14.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-reverse-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-reverse-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Замковое соединение</h2>
+                                        <h3 class="font-h3 color--secondary">SECRET-FIX</h3>
+                                        <!-- <p class="font-t1 color--secondary"></p> -->
+                                        <div
+                                            class="quality-system-reverse-v2__tongue-left color-block--accent d-none-md">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Соединения v2 -->
+        <div class="quality-system-v2 sp-b-yellow product-item" data-id="krovelnye">
+            <div class="container">
+                <div class="col">
+                    <div class="swiper quality-system-v2-mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-v2__wrapper">
+
+                                    <div class="quality-system-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Профилирование</h2>
+                                        <h3 class="font-h3 color--secondary">TRAPEZIODAL 50-50</h3>
+                                        <div class="quality-system-v2__tongue-left color-block--accent d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_v2_image_1.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Соединения v2 reverse -->
+        <div class="quality-system-reverse-v2 sp-b-orange product-item" data-id="krovelnye">
+            <div class="container">
+                <div class="col">
+                    <div class="swiper quality-system-v2-mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-reverse-v2__wrapper">
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-reverse-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_reverse-v2_image_2.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-reverse-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-reverse-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Замковое соединение</h2>
+                                        <h3 class="font-h3 color--secondary sp-b-dark-purple">ROOF LOCK</h3>
+                                        <p class="font-t1 color--secondary">Лабиринтный стык</p>
+                                        <div
+                                            class="quality-system-reverse-v2__tongue-left color-block--accent d-none-md">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="quality-system-reverse-v2__wrapper">
+
+                                    <div class="quality-system-v2__right-block color-block--primary">
+                                        <div class="quality-system-reverse-v2__image">
+                                            <img loading="lazy" src="/image/quality_system_reverse-v2_image_3.jpg" alt="">
+                                        </div>
+                                        <div class="quality-system-reverse-v2__tongue-right d-none-md"></div>
+                                    </div>
+
+                                    <div class="quality-system-reverse-v2__left-block color-block--accent">
+                                        <h2 class="font-h2 color--secondary sp-b-burgundy">Замковое соединение</h2>
+                                        <h3 class="font-h3 color--secondary sp-b-dark-purple">ROOF LOCK </h3>
+                                        <p class="font-t1 color--secondary">Прямой стык</p>
+                                        <div
+                                            class="quality-system-reverse-v2__tongue-left color-block--accent d-none-md">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Палитра -->
+    <section class="palette sp-b-orange">
+        <div class="container">
+            <div class="col">
+
+                <div class="palette__header sp-b-dark-blue">
+                    <h2 class="palette__title font-h2 color--primary">
+                        Панели можно окрасить в любой цвет из палитры RAL
+                    </h2>
+                    <p class="palette__desk font-t1">
+                        При выборе цвета панелей учитывайте, что темные поверхности больше нагреваются в летнее
+                        время, что приводит к тепловым деформациям обшивок. Чтобы избежать последствий тепловой
+                        деформации, таких как вздутие внешней облицовки, образование поперечных складок, отдавайте
+                        предпочтение светлым цветам и оттенкам, а также следуйте рекомендациям технических
+                        специалистов ГК ТехноСтиль.
+                    </p>
+                </div>
+
+                <div class="palette__wrapper">
+
+                    <div class="swiper palette-mySwiper2 product-item" data-id="krovelnye">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div class="swiper palette-mySwiper2 product-item" data-id="stenovye">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div thumbsSlider="" class="swiper palette-mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_property.jpg" />
+                                <p class="font-s2 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="palette sp-b-orange product-item" data-id="krovelnye">
+        <div class="container">
+            <div class="col">
+
+                <div class="palette__header sp-b-dark-blue">
+                    <h2 class="palette__title font-h2 color--primary">
+                        Панели можно окрасить в любой цвет из палитры RAL
+                    </h2>
+                    <p class="palette__desk font-t1">
+                        При выборе цвета панелей учитывайте, что темные поверхности больше нагреваются в летнее
+                        время, что приводит к тепловым деформациям обшивок. Чтобы избежать последствий тепловой
+                        деформации, таких как вздутие внешней облицовки, образование поперечных складок, отдавайте
+                        предпочтение светлым цветам и оттенкам, а также следуйте рекомендациям технических
+                        специалистов ГК ТехноСтиль.
+                    </p>
+                </div>
+
+                <div class="palette__wrapper">
+
+                    <div class="swiper palette-mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--primary">RAL9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_mineral_krovelnye.jpg" />
+                                <p class="font-h3 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div thumbsSlider="" class="swiper palette-mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_property.jpg" />
+                                <p class="font-s2 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="palette sp-b-orange product-item" data-id="krovelnye">
+        <div class="container">
+            <div class="col">
+
+                <div class="palette__header sp-b-dark-blue">
+                    <h2 class="palette__title font-h2 color--primary">
+                        Панели можно окрасить в любой цвет из палитры RAL
+                    </h2>
+                    <p class="palette__desk font-t1">
+                        При выборе цвета панелей учитывайте, что темные поверхности больше нагреваются в летнее
+                        время, что приводит к тепловым деформациям обшивок. Чтобы избежать последствий тепловой
+                        деформации, таких как вздутие внешней облицовки, образование поперечных складок, отдавайте
+                        предпочтение светлым цветам и оттенкам, а также следуйте рекомендациям технических
+                        специалистов ГК ТехноСтиль.
+                    </p>
+                </div>
+
+                <div class="palette__wrapper">
+
+                    <div class="swiper palette-mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--primary">RAL9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">RAL9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_mineral_stenovye.jpg" />
+                                <p class="font-h3 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div thumbsSlider="" class="swiper palette-mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1014_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 1014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1015_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 1015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral1037_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 1037</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral2007_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 2007</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral3005_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 3005</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral5017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 5017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral6010_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 6010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7001_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 7001</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral7004_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 7004</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral8017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 8017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9002_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9002</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9003_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9003</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9006_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 9006</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9010_property.jpg" />
+                                <p class="font-s2 color--primary">RAL 9010</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/ral9017_property.jpg" />
+                                <p class="font-s2 color--secondary">RAL 9017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="/image/property/raltree_property.jpg" />
+                                <p class="font-s2 color--secondary">ДЕРЕВО</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Здесь будет блок для угловых -->
+
+    <!-- Каталоги и Сертификаты -->
+    <section class="catalogs sp-b-orange">
+        <div class="container">
+            <div class="catalogs__wrapper">
+                <div class="col-6 col-md-4 col-sm-3">
+                    <div class="catalogs__image">
+                        <img loading="lazy" class="product-item" src="/image/catalogs-image-stenovye.jpg" data-id="stenovye" alt="" />
+                        <img loading="lazy" class="product-item" src="/image/catalogs-image-krovelnye.jpg" data-id="krovelnye"
+                            alt="" />
+                        <img loading="lazy" class="product-item" src="/image/catalogs-image-uglovye.jpg" data-id="uglovye" alt="" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-3">
+                    <h3 class="font-h3 sp-b-mint">Каталоги</h3>
+                    <div class="catalogs__ul">
+                        <div class="product-item" data-id="stenovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Презентационный каталог компании</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="stenovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Каталог технических решений</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="krovelnye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Презентационный каталог компании</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="krovelnye">
+                            <a class="catalogs__item" data-id="krovelnye" href="/doc/proverka-test.docx"
+                                target="_blank">
+                                <p class="font-t1">Каталог технических решений</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="uglovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Презентационный каталог компании</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="uglovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Каталог технических решений</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="font-h3 sp-t-opacity-green sp-b-mint">Сертификаты</h3>
+                    <div class="catalogs__ul">
+                        <div class="product-item" data-id="stenovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия пожарной безопасности (Стеновые с-п МВ)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="stenovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия ГОСТ (Стеновые с-п МВ)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="krovelnye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия ГОСТ (Кровельные с-п МВ)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="krovelnye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия пожарной безопасности (Кровельные с-п МВ)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="uglovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия ГОСТ (Угловые с-п МВ)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div class="product-item" data-id="uglovye">
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия пожарной безопасности (Угловые с-п МВ)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продуктовые преимущества -->
+    <section class="product-advantages">
+        <div class="container">
+            <!-- <div class="col">
+                <h2 class="font-h2 color--brend-orange sp-b-opacity-green">Станьте клиентом компании «ТехноСтиль» и
+                    получите такие преимущества:</h2>
+            </div> -->
+            <div class="product-advantages__wrapper">
+                <div class="col-6 col-md-4 col-sm-3">
+                    <div class="product-advantages__image">
+                        <img loading="lazy" src="/image/product-advantages-sandwich-paneli.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <div class="col-1"></div> -->
+                <div class="product-advantages__info">
+                    <div class="col">
+                        <h2 class="font-h2 color--brend-orange sp-b-opacity-green">
+                            Станьте клиентом компании &laquo;ТехноСтиль&raquo; и&nbsp;получите такие преимущества:
+                        </h2>
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-3">
+                        <div class="product-advantages__line color-block--accent"></div>
+                        <p class="font-t1 sp-t-yellow">Продукция высокого качества, которая прошла сертификацию и
+                            реализуется с сопроводительной документацией.</p>
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-3">
+                        <div class="product-advantages__line color-block--accent"></div>
+                        <p class="font-t1 sp-t-yellow">Рекомендации, разработанные экспертами в конструкторской и
+                            технической сферах. </p>
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-3">
+                        <div class="product-advantages__line color-block--accent"></div>
+                        <p class="font-t1 sp-t-yellow">Производство сэндвич-панелей по требованиям, заданным
+                            архитектурным проектом.</p>
+                    </div>
+                    <div class="col-6 col-md-6 col-sm-3">
+                        <div class="product-advantages__line color-block--accent"></div>
+                        <p class="font-t1 sp-t-yellow">Ускоренная доставка продукции на объект клиента.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="object-map sp-v-orange">
+        <!-- <div class="container">
+            <div class="col">
+                <div class="object-map__animation-block">
+                    <div class="object-map__image">
+                        <img loading="lazy" src="/image/object_map_animation_block.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="object-map__pad">
+            <div class="object-map__wrapper">
+                <div class="swiper object-map-mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Технопарк Руднево</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2022, г. Москва</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/tekhnopark-rudnevo.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">30 000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Складской комплекс</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2022, Аксайский район, Ростовская
+                                    область</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/object-map_pad_skladskoy_kompleks.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">9 000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Автосалон Викинги</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2022, г. Тольятти</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/avtosalon-vikingi.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">ТЦ Макси</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2015, г. Тула</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/tts-maksi.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">35 000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Автосалон Kia</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2013, Тульская область</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/avtosalon-vikingi.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="object-map__image-map d-none-md">
+                    <img loading="lazy" src="/image/object_map_animation_block.png" alt="">
+                    <div class="object-map__text-block">
+                        <p class="font-h1 sp-b-burgundy">ОБЪЕКТЫ ТЕХНОСТИЛЬ</p>
+                        <p class="font-t1">От Калининграда до острова Врангеля — наши объекты производственного,
+                            сельскохозяйственного,
+                            складского и торгового назначения уже приносят выгоду своим заказчикам!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section class="calc sp-b-orange">
+        <div class="container">
+            <div class="col">
+                <div class="calc__wrapper calc__formSubmitRoof sp-v-opacity-green color-block--primary">
+    
+                    <form class="calc__formSubmitRoof1" action="/submit">
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Выберите тип крыши и введите размеры постройки</h1>
+    
+                            <h2 class="font-h2">1/4</h2>
+                        </div>
+    
+                        <div class="calc__gridBox">
+                            <div class="calc__leftSide">
+                                <div class="calc__inputGroup calc__custom-select sp-b-purple">
+                                    <label class="calc__label " for="roofTypeSelect">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Тип крыши</span>
+                                    </label>
+                                    <select id="roofTypeSelect" class="calc__input sp-t-burgundy sp-b-burgundy font-s1">
+                                        <option class="calc__selectOption color--tertiary" value="Односкатная">Односкатная
+                                        </option>
+                                        <option class="calc__selectOption color--tertiary" value="Двускатная">Двускатная
+                                        </option>
+                                        <option class="calc__selectOption color--tertiary" value="Плоская">Плоская</option>
+                                    </select>
+                                    <div class="calc__arrowWrapper">
+                                        <img loading="lazy" class="calc__arrow" src="/image/calcSelectArrow.svg" alt="arrow" width="16"/>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__inputGroup sp-b-purple">
+                                    <label class="calc__label " for="roofOverhangHeightInput">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Высота свеса</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="roofOverhangHeightInput"
+                                               class="calc__input sp-t-burgundy sp-b-burgundy font-s1" value="2 200 см"
+                                               type="text">
+    
+                                        <button class="calc__minusBtn" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__inputGroup calc__inputGroupDisable sp-b-purple">
+                                    <label class="calc__label" for="columnStepInput">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Шаг колонн</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="columnStepInput" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                               value="2 200 мм" readonly>
+    
+                                        <button class="calc__minusBtn" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="calc__rightSide">
+                                <div class="calc__rightLabelBox">
+                                    <div class="calc__inputGroup sp-b-purple">
+                                        <label class="calc__label" for="widthInput">
+                                            <span class="sp-b-dark-purple font-s1 color--tertiary">Ширина</span>
+                                        </label>
+    
+                                        <div class="calc__input-with-buttons">
+                                            <input id="widthInput" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                                   value="1 м" readonly
+                                            >
+    
+                                            <button class="calc__minusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                            </button>
+                                            <button class="calc__plusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                    <div class="calc__inputGroup sp-b-purple">
+                                        <label class="calc__label " for="lengthInput">
+                                            <span class="sp-b-dark-purple font-s1 color--tertiary">Длина</span>
+                                        </label>
+    
+                                        <div class="calc__input-with-buttons">
+                                            <input id="lengthInput"
+                                                   class="calc__input sp-t-burgundy sp-b-burgundy color--primary font-s1"
+                                                   value="1 м" readonly
+                                            >
+    
+                                            <button class="calc__minusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                            </button>
+                                            <button class="calc__plusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__resultBox">
+                                    <p class="font-h4">S 1 м2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-block nextBtn">
+                            <a href="#">
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Далее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="calc__wrapper calc__formSubmitPanels sp-v-opacity-green color-block--primary">
+    
+                    <form class="calc__formSubmitPanels2" action="/submit">
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Выберите толщину панелей и другие показатели</h1>
+    
+                            <h2 class="font-h2">2/4</h2>
+                        </div>
+    
+                        <div class="calc__gridBox-second">
+                            <div class="calc__leftSide-roofWall">
+                                <div class="calc__inputGroup- sp-b-purple">
+                                    <label class="calc__label " for="roofingPanels">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Толщина кровельных панелей</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="roofingPanels" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                               value="50 мм" type="text">
+    
+                                        <button class="calc__minusBtn roofingPanels" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn roofingPanelsPlus" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__inputGroup sp-b-purple">
+                                    <label class="calc__label" for="wallPanels">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Толщина стеновых панелей</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="wallPanels" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                               value="50 мм" readonly>
+    
+                                        <button class="calc__minusBtn wallPanelsMinus" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn wallPanelsPlus" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="calc__middleBlock sp-t-purple sp-b-purple font-s2">
+                                <label>
+                                    <input id="sealingMaterials" class="calc__customRadio" type="radio" value="yes">
+                                    <span>Комплектовать заказ уплотнительными и&nbsp;герметизирующими материалами</span>
+                                </label>
+    
+                                <label class="sp-t-light-blue">
+                                    <input id="fasteningElements" class="calc__customRadio" type="radio" value="yes">
+                                    <span>Комплектовать заказ крепежными элементами</span>
+                                </label>
+                            </div>
+    
+                            <div class="calc__rightSide-second">
+                                <p class="font-s1 color--tertiary">Добавить угловые панели?</p>
+    
+                                <div class="calc__cornerPanelsChoose sp-t-light-blue">
+                                    <div class="calc__cornerPanelsImgWrapper">
+                                        <img loading="lazy" src="/image/calcCornerPanels.png" width="92" height="72" alt="угловые панели">
+                                    </div>
+    
+                                    <div>
+                                        <label class="calc__cornerPanels-yesNo font-s2">
+                                            <input id="cornerPanels" class="calc__customRadio" type="radio" name="cornerPanels" value="yes">
+                                            <span>ДА</span>
+                                        </label>
+    
+                                        <label class="calc__cornerPanels-yesNo font-s2 sp-t-light-blue">
+                                            <input id="cornerPanelsNegative" class="calc__customRadio" type="radio" name="cornerPanels" value="no">
+                                            <span>НЕТ</span>
+                                        </label>
+                                    </div>
+                                </div>
+    
+                                <p class="font-s1 color--tertiary sp-t-mint">Потребуется ли изготовление фасонных
+                                    элементов?</p>
+    
+                                <div class="calc__cornerPanelsChoose sp-t-light-blue">
+                                    <div class="calc__cornerPanelsImgWrapper">
+                                        <img loading="lazy" src="/image/calcShapedElements.jpg" width="84" height="72"
+                                             alt="угловые панели">
+                                    </div>
+    
+                                    <div>
+                                        <label class="calc__cornerPanels-yesNo font-s2">
+                                            <input id="shapedElements" class="calc__customRadio" type="radio" name="shapedElements" value="yes"> <span>ДА</span>
+                                        </label>
+    
+                                        <label class="calc__cornerPanels-yesNo font-s2 sp-t-light-blue">
+                                            <input id="shapedElementsNegative" class="calc__customRadio" type="radio" name="shapedElements" value="no"> <span>НЕТ</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="calc__buttonsWrapper">
+                                <div class="button-block backBtn">
+                                    <a href="#">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Назад</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="button-block nextBtn">
+                                    <a href="#">
+                                        <div class="button-block__blue">
+                                            <p class="font-s1 font-s1--size color--secondary">Далее</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="calc__wrapper calc__formSubmitColor sp-v-opacity-green color-block--primary">
+                    <form class="calc__formSubmitColor3" action="/submit">
+    
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Выберите вариант наполнителя и цвет панелей</h1>
+    
+                            <h2 class="font-h2">3/4</h2>
+                        </div>
+    
+                        <p class="sp-b-dark-purple font-s1 color--tertiary">Выберите цвет или введите код по RAL</p>
+    
+                        <div class="calc__color-picker sp-b-purple">
+                            <div class="calc__color-bar">
+    
+                            </div>
+                            <input id="ralColor" type="text" class="calc__ral-input font-s1" placeholder=" ">
+                        </div>
+    
+                        <div class="calc__fillerType">
+                            <p class="sp-b-burgundy font-s1 color--tertiary">Выберите вид наполнителя</p>
+    
+                            <div class="calc__fillerChoice sp-b-purple">
+                                <label class="calc__cornerPanels-yesNo font-s2">
+                                    <input id="mineral" class="calc__customRadio" type="radio" name="typeOfFiller" value="Минеральная вата"> <span>Минеральная вата</span>
+                                </label>
+    
+                                <label class="calc__cornerPanels-yesNo font-s2">
+                                    <input id="polystyrene" class="calc__customRadio" type="radio" name="typeOfFiller" value="Пенополистирол"> <span>Пенополистирол</span>
+                                </label>
+    
+                                <label class="calc__cornerPanels-yesNo font-s2">
+                                    <input id="pirPur" class="calc__customRadio" type="radio" name="typeOfFiller" value="PIR/PUR"> <span>PIR/PUR</span>
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="calc__buttonsWrapper">
+                            <div class="button-block backBtn">
+                                <a href="#">
+                                    <div class="button-block__white">
+                                        <p class="font-s1 font-s1--size color--accent">Назад</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="button-block nextBtn">
+                                <a href="#">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Далее</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="calc__wrapper calc__formSubmitContacts sp-v-opacity-green color-block--primary">
+                    <form class="calc__formSubmitContacts4" action="/submit">
+    
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Контактные данные и проверка заказа</h1>
+    
+                            <h2 class="font-h2">4/4</h2>
+                        </div>
+    
+                        <div class="calc__contactsOrderBlock">
+                            <div class="calc__inputGroup">
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Имя</span>
+                                    <input id="name" class="calc__inputContacts font-s1" style="height: 60px" type="text">
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Телефон</span>
+                                    <input id="phone" class="calc__inputContacts font-s1" type="tel">
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Email</span>
+                                    <input id="email" class="calc__inputContacts font-s1" type="email">
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey color--tertiary font-s1">Регион объекта</span>
+                                    <select id="region" class="calc__inputContacts font-s1">
+                                        <option>Тульская обл., г. Щёкино, ул. Болдина, д. 115</option>
+                                        <option>г. Самара, ул. Олимпийская, 59</option>
+                                    </select>
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Комментарий</span>
+                                    <textarea id="message" class="calc__message font-s1">
+                                </textarea>
+                                </label>
+                            </div>
+    
+                            <div class="calc__orderBlock">
+                                <h4 class="calc__orderBlock-title sp-t-purple sp-b-mint font-h4">Ваш заказ:</h4>
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Кровельные панели 50 мм <span
+                                            class="font-s2">100 <span>м2</span></span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Стеновые панели 50 мм <span
+                                            class="font-s2">100 <span>м2</span></span>
+                                    </p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Фасонные элементы 50 мм <span
+                                            class="font-s2">100 <span>м2</span></span></p>
+                                </div>
+    
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Крепеж для кровли 5,5хL <span
+                                            class="font-s2">200 <span>шт</span></span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Крепеж для кровли в свободную гофру
+                                        4,8х19
+                                        <span class="font-s2">200 <span>шт</span></span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Крепеж для стены 5,5хL <span
+                                            class="font-s2">20 <span>шт</span></span>
+                                    </p>
+                                </div>
+    
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Поставка крепежных элементов <span
+                                            class="font-s2">+</span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Уплотнительные и герметизирующие
+                                        материалы
+                                        <span class="font-s2">+</span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Угловые панели <span
+                                            class="font-s2">+</span>
+                                    </p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Изготовление фасонных элементов <span
+                                            class="font-s2">+</span></p>
+                                </div>
+    
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Цвет <span
+                                            class="calc__orderedColor"></span>
+                                    </p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Вид наполнителя <span class="font-s2">Пенополистирол</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="calc__contactsButtonsWrapper sp-v-burgundy">
+                            <div class="button-block">
+                                <a href="#">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Прикрепить файлы <img loading="lazy"
+                                                class="calc__AddFileIcon" src="/image/calcAddFileIcon.svg" width="18"
+                                                height="18"
+                                                alt="icon"></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="button-block">
+                                <a href="#">
+                                    <div class="button-block__white">
+                                        <p class="font-s1 font-s1--size color--accent">Отправить</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вас может также заинтересовать -->
+    <section class="interest sp-b-orange">
+        <div class="container">
+            <div class="col">
+                <h2 class="font-h2 sp-b-burgundy">Вас может также заинтересовать</h2>
+            </div>
+            <div class="interest__wrapper">
+
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="interest__card color-block--primary">
+                        <div class="interest__image">
+                            <img loading="lazy" src="/image/interest_image_krovelnye.png" alt="">
+                        </div>
+                        <h4 class="font-h4 color--tertiary text-align-center sp-v-purple">КРОВЕЛЬНЫЕ СЭНДВИЧ-ПАНЕЛИ
+                            С&nbsp;МИНЕРАЛЬНОЙ ВАТОЙ</h4>
+                        <!-- blue-button arrow -->
+                        <div class="button-block  button-block__width-all">
+                            <a class="scroll-to" href="#chips">
+                                <!-- <a href="/products/mineral.html#krovelnye"> -->
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="interest__card color-block--primary">
+                        <div class="interest__image">
+                            <img loading="lazy" src="/image/interest_image_uglovye.png" alt="">
+                        </div>
+                        <h4 class="font-h4 color--tertiary text-align-center sp-v-purple">УГЛОВЫЕ СЭНДВИЧ-ПАНЕЛИ
+                            С&nbsp;МИНЕРАЛЬНОЙ ВАТОЙ</h4>
+                        <!-- blue-button arrow -->
+                        <div class="button-block  button-block__width-all">
+                            <a class="scroll-to" href="#chips">
+                                <!-- <a href="/products/mineral.html#uglovye"> -->
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="interest__card color-block--primary">
+                        <div class="interest__image">
+                            <img loading="lazy" src="/image/interest_image_stenovye.png" alt="">
+                        </div>
+                        <h4 class="font-h4 color--tertiary text-align-center sp-v-purple">СТЕНОВЫЕ СЭНДВИЧ-ПАНЕЛИ
+                            С&nbsp;МИНЕРАЛЬНОЙ ВАТОЙ</h4>
+                        <!-- blue-button arrow -->
+                        <div class="button-block  button-block__width-all">
+                            <a class="scroll-to" href="#chips">
+                                <!-- <a href="/products/mineral.html#stenovye"> -->
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer sp-v-purple">
+        <div class="container">
+            <div class="col">
+                <div class="footer__wrapper">
+
+                    <div class="footer__top-menu">
+                        <a class="font-t1 color--secondary" href="/">Главная</a>
+                        <a class="font-t1 color--secondary" href="/events.html">Новости</a>
+                        <a class="font-t1 color--secondary" href="/production.html">Производство</a>
+                        <a class="font-t1 color--secondary" href="/about.html">О компании</a>
+                        <a class="font-t1 color--secondary" href="/products.html#mineralnaya-vata">Продукция</a>
+                        <a class="font-t1 color--secondary" href="/contacts.html">Контакты</a>
+                        <a class="font-t1 color--secondary" href="/objects.html">Объекты</a>
+                    </div>
+
+                    <div class="footer__middle-menu sp-v-opacity-green">
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Сендвич-панели</p>
+                            <a class="font-t2 color--secondary"
+                                href="/products/mineral.html">С&nbsp;минеральной&nbsp;ватой</a>
+                            <a class="font-t2 color--secondary" href="/products/penopolistirol.html">С
+                                пенополистиролом</a>
+                            <a class="font-t2 color--secondary" href="/products/pir-pur.html">С PIR/PUR
+                                наполнителем</a>
+                            <a class="font-t2 color--secondary"
+                                href="/products/soundproofing.html">Звукоизоляционные</a>
+                            <a class="font-t2 color--secondary"
+                                href="/products/ventilated.html">Вентилируемые</a>
+                            <a class="font-t2 color--secondary" href="/products/seam-roofing.html">Фальцевая кровля</a>
+                        </div>
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Готовые&nbsp;решения</p>
+                            <a class="font-t2 color--secondary" href="/products/urban.html">Модульный фасад Urban</a>
+                            <a class="font-t2 color--secondary" href="/products/lskp.html">Легкосбрасываемые конструкции
+                                (ЛСК-П)</a>
+                            <a class="font-t2 color--secondary" href="/products/partitions.html">Противожарные
+                                перегородки</a>
+                        </div>
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Другая&nbsp;продукция</p>
+                            <a class="font-t2 color--secondary" href="/products/painted-steel.html">Окрашенная рулонная
+                                сталь</a>
+                            <a class="font-t2 color--secondary" href="/products/other.html">Фасонные элементы и
+                                комплектующие</a>
+                        </div>
+
+                    </div>
+
+                    <h3 class="font-h3 color--tertiary text-align-right">Оставте <a class="color--brend-orange"
+                            href="/contacts.html#form">заявку</a> и мы ответим на ваши вопросы</h3>
+
+                    <div class="footer__contact sp-t-dark-blue sp-b-burgundy">
+                        <p class="addres-geo font-t1 color--tertiary"></p>
+                        <p class="tel-geo font-t1 color--tertiary"></p>
+                    </div>
+
+                    <div class="footer__end sp-t-burgundy">
+
+                        <a href="/">
+                            <div class="footer__image">
+                                <img loading="lazy" src="/image/logo_white_40px.svg" width="155" height="50" alt="">
+                            </div>
+                        </a>
+
+                        <p class="font-t2 color--tertiary">Разработка DoubleViStudio</p>
+
+                        <div class="footer__social">
+                            <a href="https://zen.yandex.ru/id/61812d81c83c0927b2aadb28" target="_blank">
+                                <div class="footer__image">
+                                    <img loading="lazy" src="/image/icon_dzen.svg" alt="" width="24" height="24">
+                                </div>
+                            </a>
+                            <a href="https://t.me/tehnostil" target="_blank">
+                                <div class="footer__image">
+                                    <img loading="lazy" src="/image/icon_telegram.svg" alt="" width="24" height="24">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="/script/script.js"></script>
+</body>
+
+</html>

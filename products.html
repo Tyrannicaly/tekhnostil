@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <title>Продукция</title>
+</head>
+
+<body>
+    <div class="toggleHeader" style="transform: translateY(60vh);"></div>
+    <header class="header d-none-lg header--white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__wrapper">
+                        <a href="/" class="header__logo-block">
+                            <div class="header__logo-icon"></div>
+                            <div class="header__logo"></div>
+                        </a>
+                        <div class="header__menu">
+                            <a href="/products.html#mineralnaya-vata">
+                                <div class="header__catalog-btn">
+                                    <!-- <input id="header__catalog-toggle" type="checkbox" /> -->
+                                    <div class="header__arrow"></div>
+                                    <p class="font-t2 color--secondary">Каталог</p>
+                                </div>
+                            </a>
+                            <a class="header__li font-t2" href="/events.html">Новости</a>
+                            <a class="header__li font-t2" href="/production.html">Производство</a>
+                            <a class="header__li font-t2" href="/about.html">О компании</a>
+                            <!-- <a class="header__li font-t2" href="/products.html#mineralnaya-vata">Продукция</a> -->
+                            <a class="header__li font-t2" href="/contacts.html">Контакты</a>
+                            <a class="header__li font-t2" href="/objects.html">Объекты</a>
+                        </div>
+                        <div class="header__right">
+                            <!-- <div class="search-icon" onclick="toggleSearch()"></div>
+                            <div class="search-input-container">
+                                <input type="text" class="search-input" placeholder="Поиск">
+                            </div> -->
+                            <div class="search">
+                                <input class="font-t2" type="text" placeholder="">
+                                <div>
+                                    <svg>
+                                        <use xlink:href="#path">
+                                    </svg>
+                                </div>
+                            </div>
+                                
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+                                    <path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+                                </symbol>
+                            </svg>
+                                
+                            <div class="header__contact">
+                                <a class="header__tel tel-geo font-t2 color--accent" href=""></a>
+                                <div class="city-geo-block">
+                                    <p class="header__city city-geo font-t1 color--accent"></p>
+                                    <div class="city-geo__icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__bottom">
+                        <a class="font-t2" href="/products/mineral.html">Сэндвич панели c минеральной
+                            ватой</a>
+                        <a class="font-t2" href="/products/penopolistirol.html">Сэндвич панели c
+                            пенополистиролом</a>
+                        <a class="font-t2" href="/products/pir-pur.html">Сэндвич панели c PIR/PUR</a>
+                        <a class="font-t2" href="/products/painted-steel.html">Окрашенная рулонная сталь</a>
+                        <a class="font-t2" href="/products/urban.html">Urban</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="technostyle-products sp-v-mint">
+            <div class="container">
+                <div class="technostyle-products__wrapper">
+                    <div class="col-4">
+                        <div class="technostyle-products__menu">
+                            <div data-id="sandwich-paneli"
+                                class="technostyle-products__category-product font-s2 color-block--primary chip-block__blue-active">
+                                <p>Сэндвич-панели</p>
+                            </div>
+                            <div data-id="ready"
+                                class="technostyle-products__category-product font-s2 color-block--primary">
+                                <p>Готовые решения</p>
+                            </div>
+                            <div data-id="other"
+                                class="technostyle-products__category-product font-s2 color-block--primary">
+                                <p>Другая продукция</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="technostyle-products__block">
+
+                            <a data-id="sandwich-paneli" href="/products/mineral.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />c минеральной ватой</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_minvata.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели с&nbsp;наполнителем из&nbsp;негорючего,
+                                        устойчивого к&nbsp;механическим повреждениям, экологичного, негигроскопичного
+                                        материала, с&nbsp;низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="sandwich-paneli" href="/products/penopolistirol.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />с пенополистиролом</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_penopolistirol.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели из лёгкого, экологичного,
+                                        негигроскопичного,
+                                        химически устойчивого, материала с низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="sandwich-paneli" href="/products/pir-pur.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />с PIR/PUR наполнителем</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_pirpur.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели наполненные материалом с низкой
+                                        теплопроводностью, долговечностью, биологической стойкостью, не чувствителен к
+                                        перепадам температур</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="sandwich-paneli" href="/products/soundproofing.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Звукоизоляционные<br />сэндвич-панели</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_soundproof.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели, которые выполняют функцию ограждающих
+                                        конструкций, а перфорация стальных обшивок дает уникальный эстетический эффект
+                                    </p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="sandwich-paneli" href="/products/ventilated.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Вентилируемые<br />сэндвич-панели</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_vent.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели для утепления наружных и внутренних стен,
+                                        перегородок. Используются в строительстве и реконструкции различных видов зданий
+                                    </p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="sandwich-paneli" href="/products/seam-roofing.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Фальцевая<br />кровля</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_seam_roof.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели с&nbsp;наполнителем из&nbsp;негорючего,
+                                        устойчивого к&nbsp;механическим повреждениям, экологичного, негигроскопичного
+                                        материала, с&nbsp;низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="other" href="/products/painted-steel.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Окрашенная<br />рулонная сталь</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_painted_steel.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Сталь с высококачественным защитно-декоративного
+                                        лакокрасочным покрытием. По ГОСТ 34180-2017 и ТУ</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="other" href="/products/other.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Фасонные элементы<br />и комплектующие</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_accessories.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Предназначены для герметизации и тепловой
+                                        изоляции,
+                                        предотвращают проникновение влаги через щели, выполняют декоративную функцию</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="ready" href="/products/partitions.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Противопожарные<br />перегородки</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_fire_fighting.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели наполненные материалом с низкой
+                                        теплопроводностью, долговечностью, биологической стойкостью, не чувствителен к
+                                        перепадам температур</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="ready" href="/products/urban.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Модульный<br />фасад Urban</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_urban.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Инновационная ограждающая конструкция зданий,
+                                        позволяющая реализовывать самые разнообразные архитектурные проекты</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a data-id="ready" href="/products/lskp.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Легкосбрасываемые<br />КОНСТРУКЦИИ (ЛСК-П)</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy"
+                                            src="/image/technostyle_products_image_product_easily_discarder.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Выполняют функцию противовзрывных
+                                        предохранительных
+                                        конструкций для сохранения жизни и здоровья персонала, оборудования, конструкций
+                                    </p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <header class="header-mob">
+
+        <div class="header-mob__top color-block--primary">
+            <div class="container">
+                <div class="col">
+                    <div class="header-mob__band">
+
+                        <div class="header-mob__burger">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <a href="/">
+                            <div class="header-mob__logo"></div>
+                        </a>
+
+                        <div></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mob__block">
+
+            <div class="color-block--secondary">
+                <div class="container">
+                    <div class="col">
+                        <div class="city-geo-block">
+                            <div class="city-geo__icon">
+                                <img loading="lazy" src="/image/city-geo-icon.svg" alt="">
+                            </div>
+                            <p class="city-geo font-t1 color--accent"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mob__block-info sp-t-light-blue">
+                <div class="container">
+                    <div class="col">
+
+                        <div class="header-mob__button color-block--accent">
+                            <input id="mob-catalog__toggle" type="checkbox" />
+                            <p class="font-t1 color--secondary">Каталог</p>
+                            <div class="header-mob__icon-btn"></div>
+                        </div>
+
+                        <div class="header-mob__menu sp-v-mint">
+                            <a class="header-mob__li font-t2 color--accent" href="/events.html">Новости</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/production.html">Производство</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/about.html">О компании</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products.html#mineralnaya-vata">Продукция</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/contacts.html">Контакты</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/objects.html">Объекты</a>
+                            <a class="tel-geo header-mob__li font-t2 color--accent" href=""></a>
+                        </div>
+
+                        <div class="header-mob__catalog">
+                            <a class="header-mob__li font-t2 color--accent" href="/products/mineral.html">Cэндвич-панели
+                                c минеральной ватой</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/penopolistirol.html">Cэндвич-панели c
+                                пенополистиролом</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/pir-pur.html">Cэндвич-панели
+                                c PIR/PUR наполнителем</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/soundproofing.html">Звукоизоляционные сэндвич-панели</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/ventilated.html">Вентилируемые сэндвич-панели</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/seam-roofing.html">Фальцевая
+                                кровля</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/painted-steel.html">Окрашенная рулонная сталь</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/other.html">Фасонные
+                                элементы и комплектующие</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/partitions.html">Противопожарные перегородки</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/urban.html">Модульный фасад
+                                Urban</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/lskp.html">Легкосбрасываемые
+                                КОНСТРУКЦИИ (ЛСК-П)</a>
+                            <!-- <a class="header-mob__li font-t2 color--accent" href="#"></a> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="header-mob-height"></div>
+
+    <!-- Выпадающий список городов -->
+    <div class="city">
+        <div class="color-block--primary" style="width: 100%;">
+            <div class="city__wrapper">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="font-h2 sp-b-purple">Выберите ваше местоположение</h2>
+                        <ul class="ul-city">
+                            <li class="font-t1 color--tertiary">Астрахань</li>
+                            <li class="font-t1 color--tertiary">Брянск</li>
+                            <li class="font-t1 color--tertiary">Владимир</li>
+                            <li class="font-t1 color--tertiary">Волгоград</li>
+                            <li class="font-t1 color--tertiary">Вологда</li>
+                            <li class="font-t1 color--tertiary">Воронеж</li>
+                            <li class="font-t1 color--tertiary">Екатеринбург</li>
+                            <li class="font-t1 color--tertiary">Иваново</li>
+                            <li class="font-t1 color--tertiary">Ижевск</li>
+                            <li class="font-t1 color--tertiary">Йошкар-Ола</li>
+                            <li class="font-t1 color--tertiary">Казань</li>
+                            <li class="font-t1 color--tertiary">Калининград</li>
+                            <li class="font-t1 color--tertiary">Калуга</li>
+                            <li class="font-t1 color--tertiary">Киров</li>
+                            <li class="font-t1 color--tertiary">Краснодар</li>
+                            <li class="font-t1 color--tertiary">Красноярск</li>
+                            <li class="font-t1 color--tertiary">Курск</li>
+                            <li class="font-t1 color--tertiary">Липецк</li>
+                            <li class="font-t1 color--tertiary">Москва</li>
+                            <li class="font-t1 color--tertiary">Москва</li>
+                            <li class="font-t1 color--tertiary">Набережные Челны</li>
+                            <li class="font-t1 color--tertiary">Нижний Новгород</li>
+                            <li class="font-t1 color--tertiary">Новосибирск</li>
+                            <li class="font-t1 color--tertiary">Оренбург</li>
+                            <li class="font-t1 color--tertiary">Пенза</li>
+                            <li class="font-t1 color--tertiary">Пермь</li>
+                            <li class="font-t1 color--tertiary">Подольск</li>
+                            <li class="font-t1 color--tertiary">Ростов-на-Дону</li>
+                            <li class="font-t1 color--tertiary">Рязань</li>
+                            <li class="font-t1 color--tertiary">Самара</li>
+                            <li class="font-t1 color--tertiary">Санкт-Петербург</li>
+                            <li class="font-t1 color--tertiary">Саранск</li>
+                            <li class="font-t1 color--tertiary">Саратов</li>
+                            <li class="font-t1 color--tertiary">Севастополь</li>
+                            <li class="font-t1 color--tertiary">Симферополь</li>
+                            <li class="font-t1 color--tertiary">Сочи</li>
+                            <li class="font-t1 color--tertiary">Ставрополь</li>
+                            <li class="font-t1 color--tertiary">Тверь</li>
+                            <li class="font-t1 color--tertiary">Тольятти</li>
+                            <li class="font-t1 color--tertiary">Томск</li>
+                            <li class="font-t1 color--tertiary">Тула</li>
+                            <li class="font-t1 color--tertiary">Тюмень</li>
+                            <li class="font-t1 color--tertiary">Ульяновск</li>
+                            <li class="font-t1 color--tertiary">Уфа</li>
+                            <li class="font-t1 color--tertiary">Чебоксары</li>
+                            <li class="font-t1 color--tertiary">Челябинск</li>
+                            <li class="font-t1 color--tertiary">Ярославль</li>
+                            <li class="font-t1 color--tertiary">Минск (Беларусь)</li>
+                            <li class="font-t1 color--tertiary">Нур-Султан (Казахстан)</li>
+                            <li class="font-t1 color--tertiary">Нижний Тагил</li>
+                            <li class="font-t1 color--tertiary">Смоленск</li>
+                            <li class="font-t1 color--tertiary">Орёл</li>
+                            <li class="font-t1 color--tertiary">Тамбов</li>
+                            <li class="font-t1 color--tertiary">Архангельск</li>
+                            <li class="font-t1 color--tertiary">Омск</li>
+                            <li class="font-t1 color--tertiary">Иркутск</li>
+                            <li class="font-t1 color--tertiary">Хабаровск</li>
+                            <li class="font-t1 color--tertiary">Барнаул</li>
+                            <li class="font-t1 color--tertiary">Владивосток</li>
+                            <li class="font-t1 color--tertiary">Махачкала</li>
+                            <li class="font-t1 color--tertiary">Кемерово</li>
+                            <li class="font-t1 color--tertiary">Чита</li>
+                            <li class="font-t1 color--tertiary">Волжский</li>
+                            <li class="font-t1 color--tertiary">Череповец</li>
+                            <li class="font-t1 color--tertiary">Владикавказ</li>
+                            <li class="font-t1 color--tertiary">Грозный</li>
+                            <li class="font-t1 color--tertiary">Мурманск</li>
+                            <li class="font-t1 color--tertiary">Новороссийск</li>
+                            <li class="font-t1 color--tertiary">Нижнекамск</li>
+                            <li class="font-t1 color--tertiary">Нальчик</li>
+                            <li class="font-t1 color--tertiary">Великий Новгород</li>
+                            <li class="font-t1 color--tertiary">Псков</li>
+                            <li class="font-t1 color--tertiary">Гатчина</li>
+                            <li class="font-t1 color--tertiary">Колпино</li>
+                            <li class="font-t1 color--tertiary">Кингисепп</li>
+                            <li class="font-t1 color--tertiary">Темрюк</li>
+                        </ul>
+                        <div class="city__close"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumb breadcrumb--position d-none-md">
+        <div class="container">
+            <div class="col">
+                <nav class="">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link font-d" href="/">Главная</a>
+                            <p>/</p>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link font-d" href="/products.html">Продукция</a>
+                            <p>/</p>
+                        </li>
+                        <li class="breadcrumb__item breadcrumb__item--last">
+                            <a class="breadcrumb__link font-d" href="">Стеновые сендвич-панели</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Видео обложка -->
+    <section class="cover-video sp-b-orange">
+        <div class="cover-video__wrapper">
+            <div class="cover-video__shadow"></div>
+            <video autoplay loop muted playsinline>
+                <source src="/video/intro.mp4" type="video/mp4">
+            </video>
+            <div class="cover-video__info">
+                <div class="col-6 col-md-6">
+                    <h1 class="font-h1 sp-b-burgundy color--secondary">Продукция Техностиль</h1>
+                    <p class="font-t1 color--secondary">
+                        Строительные материалы «ТехноСтиль» отличаются высокой прочностью
+                        и теплопроводностью, сочетающейся с долговечностью и отличными
+                        противопожарными характеристиками.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продукция Техностиль -->
+    <!-- <section class="products-cover sp-b-orange">
+        <div class="container">
+            <div class="products-cover__wrapper">
+                <div class="col-7 col-md-6">
+                    <div class="products-cover__image">
+                        <img loading="lazy" src="/image/products-cover-image.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-1 d-none-md"></div>
+                <div class="col-4 col-md-6">
+                    <h1 class="font-h1 sp-b-burgundy">Продукция Техностиль</h1>
+                    <p class="font-t1">
+                        Строительные материалы «ТехноСтиль» отличаются высокой прочностью
+                        и теплопроводностью, сочетающейся с долговечностью и отличными
+                        противопожарными характеристиками.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Фильтр с продукцией -->
+    <section class="products-list sp-b-orange">
+        <div class="container">
+
+            <!-- Чипы -->
+            <div class="row sp-b-green">
+                <div class="swiper products-list-mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <!-- blue-chip arrow -->
+                            <div class="chip-block">
+                                <a href="#mineralnaya-vata" data-id="mineralnaya-vata">
+                                    <div class="chip-block__blue chip-block__blue-active">
+                                        <p class="font-t2 font-t2--size color--accent">Сэндвич-панели с минеральной
+                                            ватой</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- blue-chip arrow -->
+                            <div class="chip-block">
+                                <a href="#penopolistirol" data-id="penopolistirol">
+                                    <div class="chip-block__blue">
+                                        <p class="font-t2 font-t2--size color--accent">Сэндвич-панели с пенополистиролом
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- blue-chip arrow -->
+                            <div class="chip-block">
+                                <a href="#pir-pur" data-id="pir-pur">
+                                    <div class="chip-block__blue">
+                                        <p class="font-t2 font-t2--size color--accent">Сэндвич-панели PIR/PUR</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- blue-chip arrow -->
+                            <div class="chip-block">
+                                <a href="#ready" data-id="ready">
+                                    <div class="chip-block__blue">
+                                        <p class="font-t2 font-t2--size color--accent">Готовые решения</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- blue-chip arrow -->
+                            <div class="chip-block">
+                                <a href="#other" data-id="other">
+                                    <div class="chip-block__blue">
+                                        <p class="font-t2 font-t2--size color--accent">Другая продукция</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточки -->
+            <div class="row">
+                <div class="products-list__block">
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="mineralnaya-vata">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/stenovyye_sendvich_paneli_min_vata.png" alt="">
+                            </div>
+
+                            <a href="/products/mineral.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Стеновые<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/mineral.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="mineralnaya-vata">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/krovelnye_sendvich_paneli_min_vata.png" alt="">
+                            </div>
+
+                            <a href="/products/mineral.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Кровельные<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/mineral.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="mineralnaya-vata">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/uglovye_sendvich_paneli_min_vata.png" alt="">
+                            </div>
+
+                            <a href="/products/mineral.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Угловые<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/mineral.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="penopolistirol">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/stenovye_sendvich_paneli_penopolistirol.png" alt="">
+                            </div>
+
+                            <a href="/products/penopolistirol.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Стеновые<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/penopolistirol.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="penopolistirol">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/krovelnye_sendvich_paneli_penopolistirol.png" alt="">
+                            </div>
+
+                            <a href="/products/penopolistirol.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Кровельные<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/penopolistirol.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="pir-pur">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/stenovye_sendvich_paneli_pir_pur.png" alt="">
+                            </div>
+
+                            <a href="/products/pir-pur.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Стеновые<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/pir-pur.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="pir-pur">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/krovelnye_sendvich_paneli_pir_pur.png" alt="">
+                            </div>
+
+                            <a href="/products/pir-pur.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Кровельные<br />сэндвич-панели</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/pir-pur.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="ready">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/modulny_fasad_urban.png" alt="">
+                            </div>
+
+                            <a href="/products/urban.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Модульный фасад<br />URBAN</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/urban.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="ready">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/legkosbrasyvayemye_konstruktsii.png" alt="">
+                            </div>
+
+                            <a href="/products/lskp.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Легкосбрасываемые<br />конструкции</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/lskp.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="other">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/okrashennaya_rulonnaya_stal.png" alt="">
+                            </div>
+
+                            <a href="/products/painted-steel.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Окрашенная<br />рулонная сталь</p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/painted-steel.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-3 col-sm-3" data-id="other">
+                        <div class="products-list__item color-block--primary">
+
+                            <div class="products-list__image">
+                                <img loading="lazy" src="/image/products_list_other.png" alt="">
+                            </div>
+
+                            <a href="/products/other.html">
+                                <p class="font-h4 sp-v-purple text-align-center">Фасонные элементы<br />и комплектующие
+                                </p>
+                            </a>
+
+                            <!-- blue-button arrow -->
+                            <div class="button-block button-block__width-all">
+                                <a href="/products/other.html">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer sp-v-purple">
+        <div class="container">
+            <div class="col">
+                <div class="footer__wrapper">
+
+                    <div class="footer__top-menu">
+                        <a class="font-t1 color--secondary" href="/">Главная</a>
+                        <a class="font-t1 color--secondary" href="/events.html">Новости</a>
+                        <a class="font-t1 color--secondary" href="/production.html">Производство</a>
+                        <a class="font-t1 color--secondary" href="/about.html">О компании</a>
+                        <a class="font-t1 color--secondary" href="/products.html#mineralnaya-vata">Продукция</a>
+                        <a class="font-t1 color--secondary" href="/contacts.html">Контакты</a>
+                        <a class="font-t1 color--secondary" href="/objects.html">Объекты</a>
+                    </div>
+
+                    <div class="footer__middle-menu sp-v-opacity-green">
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Сендвич-панели</p>
+                            <a class="font-t2 color--secondary"
+                                href="/products/mineral.html">С&nbsp;минеральной&nbsp;ватой</a>
+                            <a class="font-t2 color--secondary" href="/products/penopolistirol.html">С
+                                пенополистиролом</a>
+                            <a class="font-t2 color--secondary" href="/products/pir-pur.html">С PIR/PUR
+                                наполнителем</a>
+                            <a class="font-t2 color--secondary"
+                                href="/products/soundproofing.html">Звукоизоляционные</a>
+                            <a class="font-t2 color--secondary" href="/products/ventilated.html">Вентилируемые</a>
+                            <a class="font-t2 color--secondary" href="/products/seam-roofing.html">Фальцевая кровля</a>
+                        </div>
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Готовые&nbsp;решения</p>
+                            <a class="font-t2 color--secondary" href="/products/urban.html">Модульный фасад Urban</a>
+                            <a class="font-t2 color--secondary" href="/products/lskp.html">Легкосбрасываемые конструкции
+                                (ЛСК-П)</a>
+                            <a class="font-t2 color--secondary" href="/products/partitions.html">Противожарные
+                                перегородки</a>
+                        </div>
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Другая&nbsp;продукция</p>
+                            <a class="font-t2 color--secondary" href="/products/painted-steel.html">Окрашенная рулонная
+                                сталь</a>
+                            <a class="font-t2 color--secondary" href="/products/other.html">Фасонные элементы и
+                                комплектующие</a>
+                        </div>
+
+                    </div>
+
+                    <h3 class="font-h3 color--tertiary text-align-right">Оставте <a class="color--brend-orange"
+                            href="/contacts.html#form">заявку</a> и мы ответим на ваши вопросы</h3>
+
+                    <div class="footer__contact sp-t-dark-blue sp-b-burgundy">
+                        <p class="addres-geo font-t1 color--tertiary"></p>
+                        <p class="tel-geo font-t1 color--tertiary"></p>
+                    </div>
+
+                    <div class="footer__end sp-t-burgundy">
+
+                        <a href="/">
+                            <div class="footer__image">
+                                <img loading="lazy" src="/image/logo_white_40px.svg" width="155" height="50" alt="">
+                            </div>
+                        </a>
+
+                        <p class="font-t2 color--tertiary">Разработка DoubleViStudio</p>
+
+                        <div class="footer__social">
+                            <a href="https://zen.yandex.ru/id/61812d81c83c0927b2aadb28" target="_blank">
+                                <div class="footer__image">
+                                    <img loading="lazy" src="/image/icon_dzen.svg" alt="" width="24" height="24">
+                                </div>
+                            </a>
+                            <a href="https://t.me/tehnostil" target="_blank">
+                                <div class="footer__image">
+                                    <img loading="lazy" src="/image/icon_telegram.svg" alt="" width="24" height="24">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <title>Окрашенная рулонная сталь</title>
+</head>
+
+<body>
+
+    <div class="page-shadow"></div>
+
+    <div class="toggleHeader" style="transform: translateY(60vh);"></div>
+    <header class="header d-none-lg header--white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__wrapper">
+                        <a href="/" class="header__logo-block">
+                            <div class="header__logo-icon"></div>
+                            <div class="header__logo"></div>
+                        </a>
+                        <div class="header__menu">
+                            <a href="/products.html#mineralnaya-vata">
+                                <div class="header__catalog-btn">
+                                    <!-- <input id="header__catalog-toggle" type="checkbox" /> -->
+                                    <div class="header__arrow"></div>
+                                    <p class="font-t2 color--secondary">Каталог</p>
+                                </div>
+                            </a>
+                            <a class="header__li font-t2" href="/events.html">Новости</a>
+                            <a class="header__li font-t2" href="/production.html">Производство</a>
+                            <a class="header__li font-t2" href="/about.html">О компании</a>
+                            <!-- <a class="header__li font-t2" href="/products.html#mineralnaya-vata">Продукция</a> -->
+                            <a class="header__li font-t2" href="/contacts.html">Контакты</a>
+                            <a class="header__li font-t2" href="/objects.html">Объекты</a>
+                        </div>
+                        <div class="header__right">
+                            <!-- <div class="search-icon" onclick="toggleSearch()"></div>
+                            <div class="search-input-container">
+                                <input type="text" class="search-input" placeholder="Поиск">
+                            </div> -->
+                            <div class="search">
+                                <input class="font-t2" type="text" placeholder="">
+                                <div>
+                                    <svg>
+                                        <use xlink:href="#path">
+                                    </svg>
+                                </div>
+                            </div>
+                                
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+                                    <path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+                                </symbol>
+                            </svg>
+                                
+                            <div class="header__contact">
+                                <a class="header__tel tel-geo font-t2 color--accent" href=""></a>
+                                <div class="city-geo-block">
+                                    <p class="header__city city-geo font-t1 color--accent"></p>
+                                    <div class="city-geo__icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="header__bottom">
+                        <a class="font-t2" href="/products/mineral.html">Сэндвич панели c минеральной
+                            ватой</a>
+                        <a class="font-t2" href="/products/penopolistirol.html">Сэндвич панели c
+                            пенополистиролом</a>
+                        <a class="font-t2" href="/products/pir-pur.html">Сэндвич панели c PIR/PUR</a>
+                        <a class="font-t2" href="/products/painted-steel.html">Окрашенная рулонная сталь</a>
+                        <a class="font-t2" href="/products/urban.html">Urban</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="technostyle-products sp-v-mint">
+            <div class="container">
+                <div class="technostyle-products__wrapper">
+                    <div class="col-4">
+                        <div class="technostyle-products__menu">
+                            <div data-id="sandwich-paneli"
+                                class="technostyle-products__category-product font-s2 color-block--primary">
+                                <p>Сэндвич-панели</p>
+                            </div>
+                            <div data-id="ready"
+                                class="technostyle-products__category-product font-s2 color-block--primary chip-block__blue-active">
+                                <p>Готовые решения</p>
+                            </div>
+                            <div data-id="other"
+                                class="technostyle-products__category-product font-s2 color-block--primary">
+                                <p>Другая продукция</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="technostyle-products__block">
+
+                            <a data-id="sandwich-paneli" href="/products/mineral.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />c минеральной ватой</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_minvata.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели с&nbsp;наполнителем из&nbsp;негорючего,
+                                        устойчивого к&nbsp;механическим повреждениям, экологичного, негигроскопичного
+                                        материала, с&nbsp;низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/penopolistirol.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />с пенополистиролом</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_penopolistirol.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели из лёгкого, экологичного, негигроскопичного,
+                                        химически устойчивого, материала с низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/pir-pur.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Cэндвич-панели<br />с PIR/PUR наполнителем</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_pirpur.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели наполненные материалом с низкой
+                                        теплопроводностью, долговечностью, биологической стойкостью, не чувствителен к
+                                        перепадам температур</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/soundproofing.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Звукоизоляционные<br />сэндвич-панели</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_soundproof.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели, которые выполняют функцию ограждающих
+                                        конструкций, а перфорация стальных обшивок дает уникальный эстетический эффект</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/ventilated.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Вентилируемые<br />сэндвич-панели</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_vent.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели для утепления наружных и внутренних стен,
+                                        перегородок. Используются в строительстве и реконструкции различных видов зданий</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="sandwich-paneli" href="/products/seam-roofing.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Фальцевая<br />кровля</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_seam_roof.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели с&nbsp;наполнителем из&nbsp;негорючего,
+                                        устойчивого к&nbsp;механическим повреждениям, экологичного, негигроскопичного
+                                        материала, с&nbsp;низкой теплопроводностью</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="other" href="/products/painted-steel.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Окрашенная<br />рулонная сталь</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_painted_steel.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Сталь с высококачественным защитно-декоративного
+                                        лакокрасочным покрытием. По ГОСТ 34180-2017 и ТУ</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="other" href="/products/other.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Фасонные элементы<br />и комплектующие</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_accessories.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Предназначены для герметизации и тепловой изоляции,
+                                        предотвращают проникновение влаги через щели, выполняют декоративную функцию</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="ready" href="/products/partitions.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Противопожарные<br />перегородки</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_fire_fighting.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Панели наполненные материалом с низкой
+                                        теплопроводностью, долговечностью, биологической стойкостью, не чувствителен к
+                                        перепадам температур</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="ready" href="/products/urban.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Модульный<br />фасад Urban</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_urban.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Инновационная ограждающая конструкция зданий,
+                                        позволяющая реализовывать самые разнообразные архитектурные проекты</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a data-id="ready" href="/products/lskp.html"
+                                class="technostyle-products__product color-block--primary" target="_self">
+                                <div class="technostyle-products__front sp-v-dark-blue">
+                                    <p class="font-s1">Легкосбрасываемые<br />КОНСТРУКЦИИ (ЛСК-П)</p>
+                                    <div class="technostyle-products__icon"></div>
+                                    <div class="technostyle-products__image-product">
+                                        <img loading="lazy" src="/image/technostyle_products_image_product_easily_discarder.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="technostyle-products__back">
+                                    <p class="font-t1 sp-b-light-blue">Выполняют функцию противовзрывных предохранительных
+                                        конструкций для сохранения жизни и здоровья персонала, оборудования, конструкций</p>
+                                    <div class="technostyle-products__back-link">
+                                        <p class="font-d">Подробнее</p>
+                                        <div class="technostyle-products__icon-back"></div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <header class="header-mob">
+
+        <div class="header-mob__top color-block--primary">
+            <div class="container">
+                <div class="col">
+                    <div class="header-mob__band">
+
+                        <div class="header-mob__burger">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <a href="/">
+                            <div class="header-mob__logo"></div>
+                        </a>
+
+                        <div></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mob__block">
+
+            <div class="color-block--secondary">
+                <div class="container">
+                    <div class="col">
+                        <div class="city-geo-block">
+                            <div class="city-geo__icon">
+                                <img loading="lazy" src="/image/city-geo-icon.svg" alt="">
+                            </div>
+                            <p class="city-geo font-t1 color--accent"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mob__block-info sp-t-light-blue">
+                <div class="container">
+                    <div class="col">
+
+                        <div class="header-mob__button color-block--accent">
+                            <input id="mob-catalog__toggle" type="checkbox" />
+                            <p class="font-t1 color--secondary">Каталог</p>
+                            <div class="header-mob__icon-btn"></div>
+                        </div>
+
+                        <div class="header-mob__menu sp-v-mint">
+                            <a class="header-mob__li font-t2 color--accent" href="/events.html">Новости</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/production.html">Производство</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/about.html">О компании</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products.html#mineralnaya-vata">Продукция</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/contacts.html">Контакты</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/objects.html">Объекты</a>
+                            <a class="tel-geo header-mob__li font-t2 color--accent" href=""></a>
+                        </div>
+
+                        <div class="header-mob__catalog">
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/mineral.html">Cэндвич-панели c минеральной ватой</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/penopolistirol.html">Cэндвич-панели c
+                                пенополистиролом</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/pir-pur.html">Cэндвич-панели c PIR/PUR наполнителем</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/soundproofing.html">Звукоизоляционные сэндвич-панели</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/ventilated.html">Вентилируемые сэндвич-панели</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/seam-roofing.html">Фальцевая
+                                кровля</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/painted-steel.html">Окрашенная рулонная сталь</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/other.html">Фасонные
+                                элементы и комплектующие</a>
+                            <a class="header-mob__li font-t2 color--accent"
+                                href="/products/partitions.html">Противопожарные перегородки</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/urban.html">Модульный фасад
+                                Urban</a>
+                            <a class="header-mob__li font-t2 color--accent" href="/products/lskp.html">Легкосбрасываемые
+                                КОНСТРУКЦИИ (ЛСК-П)</a>
+                            <!-- <a class="header-mob__li font-t2 color--accent" href="#"></a> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="header-mob-height"></div>
+
+    <!-- Выпадающий список городов -->
+    <div class="city">
+        <div class="color-block--primary" style="width: 100%;">
+            <div class="city__wrapper">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="font-h2 sp-b-purple">Выберите ваше местоположение</h2>
+                        <ul class="ul-city">
+                            <li class="font-t1 color--tertiary">Астрахань</li>
+                            <li class="font-t1 color--tertiary">Брянск</li>
+                            <li class="font-t1 color--tertiary">Владимир</li>
+                            <li class="font-t1 color--tertiary">Волгоград</li>
+                            <li class="font-t1 color--tertiary">Вологда</li>
+                            <li class="font-t1 color--tertiary">Воронеж</li>
+                            <li class="font-t1 color--tertiary">Екатеринбург</li>
+                            <li class="font-t1 color--tertiary">Иваново</li>
+                            <li class="font-t1 color--tertiary">Ижевск</li>
+                            <li class="font-t1 color--tertiary">Йошкар-Ола</li>
+                            <li class="font-t1 color--tertiary">Казань</li>
+                            <li class="font-t1 color--tertiary">Калининград</li>
+                            <li class="font-t1 color--tertiary">Калуга</li>
+                            <li class="font-t1 color--tertiary">Киров</li>
+                            <li class="font-t1 color--tertiary">Краснодар</li>
+                            <li class="font-t1 color--tertiary">Красноярск</li>
+                            <li class="font-t1 color--tertiary">Курск</li>
+                            <li class="font-t1 color--tertiary">Липецк</li>
+                            <li class="font-t1 color--tertiary">Москва</li>
+                            <li class="font-t1 color--tertiary">Москва</li>
+                            <li class="font-t1 color--tertiary">Набережные Челны</li>
+                            <li class="font-t1 color--tertiary">Нижний Новгород</li>
+                            <li class="font-t1 color--tertiary">Новосибирск</li>
+                            <li class="font-t1 color--tertiary">Оренбург</li>
+                            <li class="font-t1 color--tertiary">Пенза</li>
+                            <li class="font-t1 color--tertiary">Пермь</li>
+                            <li class="font-t1 color--tertiary">Подольск</li>
+                            <li class="font-t1 color--tertiary">Ростов-на-Дону</li>
+                            <li class="font-t1 color--tertiary">Рязань</li>
+                            <li class="font-t1 color--tertiary">Самара</li>
+                            <li class="font-t1 color--tertiary">Санкт-Петербург</li>
+                            <li class="font-t1 color--tertiary">Саранск</li>
+                            <li class="font-t1 color--tertiary">Саратов</li>
+                            <li class="font-t1 color--tertiary">Севастополь</li>
+                            <li class="font-t1 color--tertiary">Симферополь</li>
+                            <li class="font-t1 color--tertiary">Сочи</li>
+                            <li class="font-t1 color--tertiary">Ставрополь</li>
+                            <li class="font-t1 color--tertiary">Тверь</li>
+                            <li class="font-t1 color--tertiary">Тольятти</li>
+                            <li class="font-t1 color--tertiary">Томск</li>
+                            <li class="font-t1 color--tertiary">Тула</li>
+                            <li class="font-t1 color--tertiary">Тюмень</li>
+                            <li class="font-t1 color--tertiary">Ульяновск</li>
+                            <li class="font-t1 color--tertiary">Уфа</li>
+                            <li class="font-t1 color--tertiary">Чебоксары</li>
+                            <li class="font-t1 color--tertiary">Челябинск</li>
+                            <li class="font-t1 color--tertiary">Ярославль</li>
+                            <li class="font-t1 color--tertiary">Минск (Беларусь)</li>
+                            <li class="font-t1 color--tertiary">Нур-Султан (Казахстан)</li>
+                            <li class="font-t1 color--tertiary">Нижний Тагил</li>
+                            <li class="font-t1 color--tertiary">Смоленск</li>
+                            <li class="font-t1 color--tertiary">Орёл</li>
+                            <li class="font-t1 color--tertiary">Тамбов</li>
+                            <li class="font-t1 color--tertiary">Архангельск</li>
+                            <li class="font-t1 color--tertiary">Омск</li>
+                            <li class="font-t1 color--tertiary">Иркутск</li>
+                            <li class="font-t1 color--tertiary">Хабаровск</li>
+                            <li class="font-t1 color--tertiary">Барнаул</li>
+                            <li class="font-t1 color--tertiary">Владивосток</li>
+                            <li class="font-t1 color--tertiary">Махачкала</li>
+                            <li class="font-t1 color--tertiary">Кемерово</li>
+                            <li class="font-t1 color--tertiary">Чита</li>
+                            <li class="font-t1 color--tertiary">Волжский</li>
+                            <li class="font-t1 color--tertiary">Череповец</li>
+                            <li class="font-t1 color--tertiary">Владикавказ</li>
+                            <li class="font-t1 color--tertiary">Грозный</li>
+                            <li class="font-t1 color--tertiary">Мурманск</li>
+                            <li class="font-t1 color--tertiary">Новороссийск</li>
+                            <li class="font-t1 color--tertiary">Нижнекамск</li>
+                            <li class="font-t1 color--tertiary">Нальчик</li>
+                            <li class="font-t1 color--tertiary">Великий Новгород</li>
+                            <li class="font-t1 color--tertiary">Псков</li>
+                            <li class="font-t1 color--tertiary">Гатчина</li>
+                            <li class="font-t1 color--tertiary">Колпино</li>
+                            <li class="font-t1 color--tertiary">Кингисепп</li>
+                            <li class="font-t1 color--tertiary">Темрюк</li>
+                        </ul>
+                        <div class="city__close"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumb breadcrumb--position d-none-md">
+        <div class="container">
+            <div class="col">
+                <nav class="">
+                    <ol class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link font-d" href="/">Главная</a>
+                            <p>/</p>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link font-d" href="/products.html">Продукция</a>
+                            <p>/</p>
+                        </li>
+                        <li class="breadcrumb__item breadcrumb__item--last">
+                            <a class="breadcrumb__link font-d" href="">Стеновые сендвич-панели</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Обложка -->
+    <section class="product-cover product-cover--urban">
+        <div class="product-cover__image-urban">
+            <img loading="lazy" src="/image/cover_urban.jpg" alt="">
+        </div>
+        <div class="product-cover__info sp-v-opacity-green">
+            <h1 class="product-cover__title-urban font-h1 color--secondary text-align-center sp-b-dark-blue">Модульный
+                фасад<br /><span class="cover-title-urban">URBAN</span></h1>
+        </div>
+    </section>
+
+    <!-- Модульный фасад Urban -->
+    <section class="facade sp-v-orange">
+        <div class="facade__container">
+            <div class="facade__wrapper">
+
+                <div class="facade__info">
+                    <h2 class="facade__title font-big sp-b-purple">Модульный фасад Urban</h2>
+                    <p class="facade__desk font-t1 sp-b-purple">Воплощайте даже самые смелые архитектурные проекты с
+                        инновационной конструкцией для ограждения зданий.</p>
+                    <div class="facade__block-btn">
+
+                        <!-- white-button arrow -->
+                        <div class="button-block">
+                            <a href="/">
+                                <div class="button-block__white">
+                                    <p class="font-s1 font-s1--size color--accent">Каталоги</p>
+
+                                    <!-- <div class="button-block__icon">
+                                                <img loading="lazy" src="/image/button-icon-arrow-blue.svg" alt="">
+                                            </div> -->
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- blue-button arrow -->
+                        <div class="button-block">
+                            <a href="/">
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Оставить заявку</p>
+
+                                    <div class="button-block__icon">
+                                        <img loading="lazy" src="/image/button-icon-arrow-white.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="facade__image">
+                    <img loading="lazy" src="/image/facade_image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карточки с желтым блоком -->
+    <section class="urban-card">
+        <div class="container">
+            <div class="row sp-b-pink">
+                <div class="urban-card__block-card">
+                    <div class="col-4 col-md-4 col-sm-3">
+                        <div class="urban-card__block-yellow color-block--brend-yellow">
+                            <h3 class="font-h2 sp-b-dark-purple">Базовый элемент</h3>
+                            <p class="font-t1">Облицовка внутри и снаружи – оцинкованная сталь</p>
+                            <div class="urban-card__image">
+                                <img loading="lazy" src="/image/urban_card_image_one.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none-md"></div>
+                    <div class="col-6 col-lg-7 col-md-6 col-sm-3">
+                        <div class="urban-card__block-info">
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Длина</p>
+                                    <p class="font-t1">600 мм – 6 000 мм<br class="d-none-md" />(шаг 1 мм)</p>
+                                </div>
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Внутренняя облицовка</p>
+                                    <p class="font-t1">0,5 мм</p>
+                                </div>
+                            </div>
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Ширина</p>
+                                    <p class="font-t1">600 мм – 1 200 мм<br class="d-none-md" />(шаг 1 мм)</p>
+                                </div>
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Наружная облицовка</p>
+                                    <p class="font-t1">0,7 мм</p>
+                                </div>
+                            </div>
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Толщина</p>
+                                    <p class="font-t1">100 мм – 200 мм<br class="d-none-md" />(шаг 1 мм)</p>
+                                </div>
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Плотность Минеральной ваты</p>
+                                    <p class="font-t1">120 кг/м³</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1 d-none-lg"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="urban-card__block-card color-block--primary">
+                    <div class="col-4 col-md-4 col-sm-3">
+                        <div class="urban-card__block-yellow color-block--brend-yellow">
+                            <h3 class="font-h2 sp-b-dark-purple">Радиусный элемент</h3>
+                            <p class="font-t1">Воплощение идей<br />архитектора</p>
+                            <div class="urban-card__image">
+                                <img loading="lazy" src="/image/urban_card_image_two.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none-md"></div>
+                    <div class="col-6 col-lg-7 col-md-6 col-sm-3">
+                        <div class="urban-card__block-info">
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Длина</p>
+                                    <p class="font-t1">600 мм – 6 000 мм<br class="d-none-md" />(шаг 1 мм)</p>
+                                </div>
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Изогнутая и форма исполнения</p>
+                                    <!-- <p class="font-t1">0,5 мм</p> -->
+                                </div>
+                            </div>
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Ширина</p>
+                                    <p class="font-t1">600 мм – 1 200 мм<br class="d-none-md" />(шаг 1 мм)</p>
+                                </div>
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Заводская готовность</p>
+                                    <!-- <p class="font-t1">0,7 мм</p> -->
+                                </div>
+                            </div>
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Толщина</p>
+                                    <p class="font-t1">100 мм – 200 мм<br class="d-none-md" />(шаг 1 мм)</p>
+                                </div>
+                                <div>
+                                    <p class="font-s1 sp-b-burgundy">Вертикальная и горизонтальная ориентация</p>
+                                    <!-- <p class="font-t1">120 кг/м³</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1 d-none-lg"></div>
+                </div>
+            </div>
+
+            <div class="row sp-t-pink">
+                <div class="urban-card__block-card">
+                    <div class="col-4 col-md-4 col-sm-3">
+                        <div class="urban-card__block-yellow color-block--brend-yellow">
+                            <h3 class="font-h2 sp-b-dark-purple">Угловой элемент</h3>
+                            <p class="font-t1">Применяется на боковых<br /> углах здания</p>
+                            <div class="urban-card__image">
+                                <img loading="lazy" src="/image/urban_card_image_three.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none-md"></div>
+                    <div class="col-6 col-lg-7 col-md-6 col-sm-3">
+                        <div class="urban-card__block-info">
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-h4 sp-b-burgundy">ВОЗМОЖНОСТЬ ИЗГОТОВЛЕНИЯ ПОСЛЕ ЗАМЕРОВ НА ОБЪЕКТЕ
+                                    </p>
+                                    <!-- <p class="font-t1">600 мм – 6 000 мм<br class="d-none-md"/>(шаг 1 мм)</p> -->
+                                </div>
+                                <div>
+                                    <p class="font-h4 sp-b-burgundy">ВОЗМОЖНОСТЬ ИЗГОТОВЛЕНИЯ С РАЗНЫМИ ДЛИНАМИ СТОРОН
+                                    </p>
+                                    <!-- <p class="font-t1">0,5 мм</p> -->
+                                </div>
+                            </div>
+
+                            <div class="urban-card__item-info">
+                                <div>
+                                    <p class="font-h4 sp-b-burgundy">ВЕРТИКАЛЬНАЯ И ГОРИЗОНТАЛЬНАЯ ОРИЕНТАЦИЯ</p>
+                                    <!-- <p class="font-t1">600 мм – 1 200 мм<br class="d-none-md"/>(шаг 1 мм)</p> -->
+                                </div>
+                                <div>
+                                    <p class="font-h4 sp-b-burgundy">ЗАВОДСКАЯ ГОТОВНОСТЬ</p>
+                                    <!-- <p class="font-t1">0,7 мм</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1 d-none-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цветовые решения -->
+    <section class="color-solutions sp-v-pastel">
+        <div class="color-solutions__wrapper">
+            <div class="container">
+                <div class="col">
+                    <div class="color-solutions__block">
+                        <div class="swiper color-solutions-mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="color-solutions__image">
+                                        <img loading="lazy" src="/image/color-solutions-7.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="color-solutions__title">
+                            <h2 class="font-h2 color--secondary">Цветовые<br class="d-none-md" /> решения</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facade-two sp-b-pastel">
+        <div class="container">
+            <div class="col">
+                <div class="facade-two__wrapper">
+                    <div class="facade-two__block-one">
+                        <h2 class="font-h2  color--primary sp-b-burgundy">Модульный фасад Urban</h2>
+                        <p class="font-t1 color--primary">Высокотехнологичный подход модульной фасадной системы Urban в
+                            сравнении с классическим вентфасадом</p>
+                    </div>
+                    <div class="facade-two__image">
+                        <img loading="lazy" src="/image/facade_two_image_was.png" alt="">
+                    </div>
+                    <div class="facade-two__block-two">
+                        <h3 class="font-h3 color--primary">Экономия до 40% времени благодаря оптимизации строительных
+                            процессов</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Рядовой стык модулей -->
+    <section class="pagination sp-b-pastel">
+        <div class="pagination__wrapper">
+            <div class="container">
+                <div class="col">
+                    <div class="swiper pagination-mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">Рядовой стык модулей</h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_ryadovoy_styk_moduley.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">Базовый элемент </h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_bazovyy_element.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">Декоративный алюминиевый
+                                            профиль</h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_dekorativnyy_alyuminiyevyy_profil.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">EPDM уплотнитель</h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_epdm_uplotnitel.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">Саморез для крепления панели
+                                        </h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_samorez_dlya_krepleniya.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">Элемент фиксирующий
+                                            уплотнитель</h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_еlement_fiksiruyushchiy_uplotnitel'.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">Регулируемая выравнивающая
+                                            основа</h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_reguliruyemaya_vyravnivayushchaya_osnova.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="pagination__item">
+                                    <div class="pagination__info">
+                                        <h2 class="font-h3 color--secondary sp-b-burgundy">лента Уплотнитель</h2>
+                                        <p class="font-t1 color--secondary">Стык модулей надежно защищен EPDM
+                                            уплотнителем и декоративным алюминиевым профилем</p>
+                                    </div>
+                                    <div class="pagination__image">
+                                        <img loading="lazy" src="/image/pagination_lenta_uplotnitel'.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Уникальный угол -->
+    <section class="corner sp-b-orange">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="corner__text-block color-block--brend-yellow">
+                        <p class="font-s1 sp-b-dark-purple">Огнестойкость</p>
+                        <p class="font-h2 color--primary">90–120 минут</p>
+                    </div>
+                </div>
+                <div class="col-5 col-md-6 col-sm-3">
+                    <div class="corner__image">
+                        <img loading="lazy" src="/image/corner_image_fire.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-3">
+                    <div class="corner__text-block color-block--brend-yellow">
+                        <p class="font-s1 sp-b-dark-purple">Класс пожарной опасности</p>
+                        <p class="font-h2 color--primary">K0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row sp-t-yellow">
+                <div class="col-6 col-md-6 col-sm-3">
+                    <div class="corner__image">
+                        <img loading="lazy" src="/image/corner_image.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-3">
+                    <div class="corner__text-block color-block--secondary">
+                        <p class="font-h2 color--primary sp-b-dark-purple">Уникальный угол</p>
+                        <p class="font-s1">Модульный фасад Urban - одно из самых плоских стеновых решений
+                            в своем классе. Уникальный скругленный угол, обеспечивает коррозионную стойкость фасадного
+                            элемента. Отсутствие разрезов не позволяет агрессивной среде разрушить целостность изделия.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Каталоги и Сертификаты -->
+    <section class="catalogs">
+        <div class="container">
+            <div class="catalogs__wrapper">
+                <div class="col-6 col-md-4 col-sm-3">
+                    <div class="catalogs__image">
+                        <img loading="lazy" src="/image/catalogs_image_urban.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-3">
+                    <h3 class="font-h3 sp-b-mint">Каталоги</h3>
+                    <div class="catalogs__ul">
+                        <div>
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Презентационный каталог компании</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Покраска Рулонной стали</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="font-h3 sp-t-opacity-green sp-b-mint">Сертификаты</h3>
+                    <div class="catalogs__ul">
+                        <div>
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия ГОСТ -2 (Кровельные с-п PIR)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия ГОСТ (Urban)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="catalogs__item" href="/doc/proverka-test.docx" target="_blank">
+                                <p class="font-t1">Сертификат соответствия пожарной безопасности (Urban)</p>
+                                <div class="catalogs__icon-download"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="object-map sp-v-orange">
+        <!-- <div class="container">
+            <div class="col">
+                <div class="object-map__animation-block">
+                    <div class="object-map__image">
+                        <img loading="lazy" src="/image/object_map_animation_block.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="object-map__pad">
+            <div class="object-map__wrapper">
+                <div class="swiper object-map-mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Технопарк Руднево</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2022, г. Москва</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/tekhnopark-rudnevo.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">30 000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Складской комплекс</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2022, Аксайский район, Ростовская
+                                    область</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/object-map_pad_skladskoy_kompleks.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">9 000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Автосалон Викинги</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2022, г. Тольятти</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/avtosalon-vikingi.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">ТЦ Макси</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2015, г. Тула</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/tts-maksi.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">35 000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="object-map__carusel color-block--tertiary">
+                                <h2 class="font-h2 color--secondary">Автосалон Kia</h2>
+                                <p class="font-t1 desc color--secondary sp-b-purple">2013, Тульская область</p>
+                                <div class="object-map__image">
+                                    <img loading="lazy" src="/image/objects/avtosalon-vikingi.jpg" alt="">
+                                </div>
+                                <div class="object-map__info sp-v-purple">
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2 350 м2</h4>
+                                        <p class="font-t1 color--secondary">Фасадная<br />система Urban</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">336 м2</h4>
+                                        <p class="font-t1 color--secondary">Кассеты<br />фасадные</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-h4 color--secondary">2000 м2</h4>
+                                        <p class="font-t1 color--secondary">Сэндвич<br />-панели</p>
+                                    </div>
+                                </div>
+                                <!-- white-button arrow -->
+                                <div class="button-block button-block__center">
+                                    <a href="/objects.html">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Все объекты</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="object-map__image-map d-none-md">
+                    <img loading="lazy" src="/image/object_map_animation_block.png" alt="">
+                    <div class="object-map__text-block">
+                        <p class="font-h1 sp-b-burgundy">ОБЪЕКТЫ ТЕХНОСТИЛЬ</p>
+                        <p class="font-t1">От Калининграда до острова Врангеля — наши объекты производственного,
+                            сельскохозяйственного,
+                            складского и торгового назначения уже приносят выгоду своим заказчикам!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section class="calc sp-b-orange">
+        <div class="container">
+            <div class="col">
+                <div class="calc__wrapper calc__formSubmitRoof sp-v-opacity-green color-block--primary">
+    
+                    <form class="calc__formSubmitRoof1" action="/submit">
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Выберите тип крыши и введите размеры постройки</h1>
+    
+                            <h2 class="font-h2">1/4</h2>
+                        </div>
+    
+                        <div class="calc__gridBox">
+                            <div class="calc__leftSide">
+                                <div class="calc__inputGroup calc__custom-select sp-b-purple">
+                                    <label class="calc__label " for="roofTypeSelect">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Тип крыши</span>
+                                    </label>
+                                    <select id="roofTypeSelect" class="calc__input sp-t-burgundy sp-b-burgundy font-s1">
+                                        <option class="calc__selectOption color--tertiary" value="Односкатная">Односкатная
+                                        </option>
+                                        <option class="calc__selectOption color--tertiary" value="Двускатная">Двускатная
+                                        </option>
+                                        <option class="calc__selectOption color--tertiary" value="Плоская">Плоская</option>
+                                    </select>
+                                    <div class="calc__arrowWrapper">
+                                        <img loading="lazy" class="calc__arrow" src="/image/calcSelectArrow.svg" alt="arrow" width="16"/>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__inputGroup sp-b-purple">
+                                    <label class="calc__label " for="roofOverhangHeightInput">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Высота свеса</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="roofOverhangHeightInput"
+                                               class="calc__input sp-t-burgundy sp-b-burgundy font-s1" value="2 200 см"
+                                               type="text">
+    
+                                        <button class="calc__minusBtn" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__inputGroup calc__inputGroupDisable sp-b-purple">
+                                    <label class="calc__label" for="columnStepInput">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Шаг колонн</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="columnStepInput" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                               value="2 200 мм" readonly>
+    
+                                        <button class="calc__minusBtn" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="calc__rightSide">
+                                <div class="calc__rightLabelBox">
+                                    <div class="calc__inputGroup sp-b-purple">
+                                        <label class="calc__label" for="widthInput">
+                                            <span class="sp-b-dark-purple font-s1 color--tertiary">Ширина</span>
+                                        </label>
+    
+                                        <div class="calc__input-with-buttons">
+                                            <input id="widthInput" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                                   value="1 м" readonly
+                                            >
+    
+                                            <button class="calc__minusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                            </button>
+                                            <button class="calc__plusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                    <div class="calc__inputGroup sp-b-purple">
+                                        <label class="calc__label " for="lengthInput">
+                                            <span class="sp-b-dark-purple font-s1 color--tertiary">Длина</span>
+                                        </label>
+    
+                                        <div class="calc__input-with-buttons">
+                                            <input id="lengthInput"
+                                                   class="calc__input sp-t-burgundy sp-b-burgundy color--primary font-s1"
+                                                   value="1 м" readonly
+                                            >
+    
+                                            <button class="calc__minusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                            </button>
+                                            <button class="calc__plusBtnSquare" type="button">
+                                                <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__resultBox">
+                                    <p class="font-h4">S 1 м2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-block nextBtn">
+                            <a href="#">
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Далее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="calc__wrapper calc__formSubmitPanels sp-v-opacity-green color-block--primary">
+    
+                    <form class="calc__formSubmitPanels2" action="/submit">
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Выберите толщину панелей и другие показатели</h1>
+    
+                            <h2 class="font-h2">2/4</h2>
+                        </div>
+    
+                        <div class="calc__gridBox-second">
+                            <div class="calc__leftSide-roofWall">
+                                <div class="calc__inputGroup- sp-b-purple">
+                                    <label class="calc__label " for="roofingPanels">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Толщина кровельных панелей</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="roofingPanels" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                               value="50 мм" type="text">
+    
+                                        <button class="calc__minusBtn roofingPanels" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn roofingPanelsPlus" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="calc__inputGroup sp-b-purple">
+                                    <label class="calc__label" for="wallPanels">
+                                        <span class="sp-b-dark-purple font-s1 color--tertiary">Толщина стеновых панелей</span>
+                                    </label>
+    
+                                    <div class="calc__input-with-buttons">
+                                        <input id="wallPanels" class="calc__input sp-t-burgundy sp-b-burgundy font-s1"
+                                               value="50 мм" readonly>
+    
+                                        <button class="calc__minusBtn wallPanelsMinus" type="button">
+                                            <img loading="lazy" src="/image/minus.svg" alt="minusIcon" width="16" height="16">
+                                        </button>
+    
+                                        <button class="calc__plusBtn wallPanelsPlus" type="button">
+                                            <img loading="lazy" src="/image/plus.svg" alt="plusIcon" width="16" height="16">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="calc__middleBlock sp-t-purple sp-b-purple font-s2">
+                                <label>
+                                    <input id="sealingMaterials" class="calc__customRadio" type="radio" value="yes">
+                                    <span>Комплектовать заказ уплотнительными и&nbsp;герметизирующими материалами</span>
+                                </label>
+    
+                                <label class="sp-t-light-blue">
+                                    <input id="fasteningElements" class="calc__customRadio" type="radio" value="yes">
+                                    <span>Комплектовать заказ крепежными элементами</span>
+                                </label>
+                            </div>
+    
+                            <div class="calc__rightSide-second">
+                                <p class="font-s1 color--tertiary">Добавить угловые панели?</p>
+    
+                                <div class="calc__cornerPanelsChoose sp-t-light-blue">
+                                    <div class="calc__cornerPanelsImgWrapper">
+                                        <img loading="lazy" src="/image/calcCornerPanels.png" width="92" height="72" alt="угловые панели">
+                                    </div>
+    
+                                    <div>
+                                        <label class="calc__cornerPanels-yesNo font-s2">
+                                            <input id="cornerPanels" class="calc__customRadio" type="radio" name="cornerPanels" value="yes">
+                                            <span>ДА</span>
+                                        </label>
+    
+                                        <label class="calc__cornerPanels-yesNo font-s2 sp-t-light-blue">
+                                            <input id="cornerPanelsNegative" class="calc__customRadio" type="radio" name="cornerPanels" value="no">
+                                            <span>НЕТ</span>
+                                        </label>
+                                    </div>
+                                </div>
+    
+                                <p class="font-s1 color--tertiary sp-t-mint">Потребуется ли изготовление фасонных
+                                    элементов?</p>
+    
+                                <div class="calc__cornerPanelsChoose sp-t-light-blue">
+                                    <div class="calc__cornerPanelsImgWrapper">
+                                        <img loading="lazy" src="/image/calcShapedElements.jpg" width="84" height="72"
+                                             alt="угловые панели">
+                                    </div>
+    
+                                    <div>
+                                        <label class="calc__cornerPanels-yesNo font-s2">
+                                            <input id="shapedElements" class="calc__customRadio" type="radio" name="shapedElements" value="yes"> <span>ДА</span>
+                                        </label>
+    
+                                        <label class="calc__cornerPanels-yesNo font-s2 sp-t-light-blue">
+                                            <input id="shapedElementsNegative" class="calc__customRadio" type="radio" name="shapedElements" value="no"> <span>НЕТ</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="calc__buttonsWrapper">
+                                <div class="button-block backBtn">
+                                    <a href="#">
+                                        <div class="button-block__white">
+                                            <p class="font-s1 font-s1--size color--accent">Назад</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="button-block nextBtn">
+                                    <a href="#">
+                                        <div class="button-block__blue">
+                                            <p class="font-s1 font-s1--size color--secondary">Далее</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="calc__wrapper calc__formSubmitColor sp-v-opacity-green color-block--primary">
+                    <form class="calc__formSubmitColor3" action="/submit">
+    
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Выберите вариант наполнителя и цвет панелей</h1>
+    
+                            <h2 class="font-h2">3/4</h2>
+                        </div>
+    
+                        <p class="sp-b-dark-purple font-s1 color--tertiary">Выберите цвет или введите код по RAL</p>
+    
+                        <div class="calc__color-picker sp-b-purple">
+                            <div class="calc__color-bar">
+    
+                            </div>
+                            <input id="ralColor" type="text" class="calc__ral-input font-s1" placeholder=" ">
+                        </div>
+    
+                        <div class="calc__fillerType">
+                            <p class="sp-b-burgundy font-s1 color--tertiary">Выберите вид наполнителя</p>
+    
+                            <div class="calc__fillerChoice sp-b-purple">
+                                <label class="calc__cornerPanels-yesNo font-s2">
+                                    <input id="mineral" class="calc__customRadio" type="radio" name="typeOfFiller" value="Минеральная вата"> <span>Минеральная вата</span>
+                                </label>
+    
+                                <label class="calc__cornerPanels-yesNo font-s2">
+                                    <input id="polystyrene" class="calc__customRadio" type="radio" name="typeOfFiller" value="Пенополистирол"> <span>Пенополистирол</span>
+                                </label>
+    
+                                <label class="calc__cornerPanels-yesNo font-s2">
+                                    <input id="pirPur" class="calc__customRadio" type="radio" name="typeOfFiller" value="PIR/PUR"> <span>PIR/PUR</span>
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="calc__buttonsWrapper">
+                            <div class="button-block backBtn">
+                                <a href="#">
+                                    <div class="button-block__white">
+                                        <p class="font-s1 font-s1--size color--accent">Назад</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="button-block nextBtn">
+                                <a href="#">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Далее</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="calc__wrapper calc__formSubmitContacts sp-v-opacity-green color-block--primary">
+                    <form class="calc__formSubmitContacts4" action="/submit">
+    
+                        <div class="calc__titleFlex">
+                            <h1 class="font-h2 sp-b-purple">Контактные данные и проверка заказа</h1>
+    
+                            <h2 class="font-h2">4/4</h2>
+                        </div>
+    
+                        <div class="calc__contactsOrderBlock">
+                            <div class="calc__inputGroup">
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Имя</span>
+                                    <input id="name" class="calc__inputContacts font-s1" style="height: 60px" type="text">
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Телефон</span>
+                                    <input id="phone" class="calc__inputContacts font-s1" type="tel">
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Email</span>
+                                    <input id="email" class="calc__inputContacts font-s1" type="email">
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey color--tertiary font-s1">Регион объекта</span>
+                                    <select id="region" class="calc__inputContacts font-s1">
+                                        <option>Тульская обл., г. Щёкино, ул. Болдина, д. 115</option>
+                                        <option>г. Самара, ул. Олимпийская, 59</option>
+                                    </select>
+                                </label>
+    
+                                <label class="calc__label sp-b-burgundy" for="roofingPanels">
+                                    <span class="sp-b-grey font-s1 color--tertiary">Комментарий</span>
+                                    <textarea id="message" class="calc__message font-s1">
+                                </textarea>
+                                </label>
+                            </div>
+    
+                            <div class="calc__orderBlock">
+                                <h4 class="calc__orderBlock-title sp-t-purple sp-b-mint font-h4">Ваш заказ:</h4>
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Кровельные панели 50 мм <span
+                                            class="font-s2">100 <span>м2</span></span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Стеновые панели 50 мм <span
+                                            class="font-s2">100 <span>м2</span></span>
+                                    </p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Фасонные элементы 50 мм <span
+                                            class="font-s2">100 <span>м2</span></span></p>
+                                </div>
+    
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Крепеж для кровли 5,5хL <span
+                                            class="font-s2">200 <span>шт</span></span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Крепеж для кровли в свободную гофру
+                                        4,8х19
+                                        <span class="font-s2">200 <span>шт</span></span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Крепеж для стены 5,5хL <span
+                                            class="font-s2">20 <span>шт</span></span>
+                                    </p>
+                                </div>
+    
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Поставка крепежных элементов <span
+                                            class="font-s2">+</span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Уплотнительные и герметизирующие
+                                        материалы
+                                        <span class="font-s2">+</span></p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Угловые панели <span
+                                            class="font-s2">+</span>
+                                    </p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Изготовление фасонных элементов <span
+                                            class="font-s2">+</span></p>
+                                </div>
+    
+                                <div class="sp-b-mint">
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Цвет <span
+                                            class="calc__orderedColor"></span>
+                                    </p>
+                                    <p class="calc__para font-t1 sp-b-dark-purple">Вид наполнителя <span class="font-s2">Пенополистирол</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="calc__contactsButtonsWrapper sp-v-burgundy">
+                            <div class="button-block">
+                                <a href="#">
+                                    <div class="button-block__blue">
+                                        <p class="font-s1 font-s1--size color--secondary">Прикрепить файлы <img loading="lazy"
+                                                class="calc__AddFileIcon" src="/image/calcAddFileIcon.svg" width="18"
+                                                height="18"
+                                                alt="icon"></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="button-block">
+                                <a href="#">
+                                    <div class="button-block__white">
+                                        <p class="font-s1 font-s1--size color--accent">Отправить</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вас может также заинтересовать -->
+    <section class="interest sp-b-orange">
+        <div class="container">
+            <div class="col">
+                <h2 class="font-h2 sp-b-burgundy">Вас может также заинтересовать</h2>
+            </div>
+            <div class="interest__wrapper">
+
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="interest__card color-block--primary">
+                        <div class="interest__image">
+                            <img loading="lazy" src="/image/interest_image_krovelnye.png" alt="">
+                        </div>
+                        <h4 class="font-h4 color--tertiary text-align-center sp-v-purple">КРОВЕЛЬНЫЕ СЭНДВИЧ-ПАНЕЛИ С&nbsp;МИНЕРАЛЬНОЙ ВАТОЙ</h4>
+                        <!-- blue-button arrow -->
+                        <div class="button-block  button-block__width-all">
+                            <!-- <a class="scroll-to" href="#chips"> -->
+                            <a href="/products/mineral.html#krovelnye">
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="interest__card color-block--primary">
+                        <div class="interest__image">
+                            <img loading="lazy" src="/image/interest_image_uglovye.png" alt="">
+                        </div>
+                        <h4 class="font-h4 color--tertiary text-align-center sp-v-purple">УГЛОВЫЕ СЭНДВИЧ-ПАНЕЛИ С&nbsp;МИНЕРАЛЬНОЙ ВАТОЙ</h4>
+                        <!-- blue-button arrow -->
+                        <div class="button-block  button-block__width-all">
+                            <!-- <a class="scroll-to" href="#chips"> -->
+                            <a href="/products/mineral.html#uglovye">
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-6 col-sm-3">
+                    <div class="interest__card color-block--primary">
+                        <div class="interest__image">
+                            <img loading="lazy" src="/image/interest_image_stenovye.png" alt="">
+                        </div>
+                        <h4 class="font-h4 color--tertiary text-align-center sp-v-purple">СТЕНОВЫЕ СЭНДВИЧ-ПАНЕЛИ С&nbsp;МИНЕРАЛЬНОЙ ВАТОЙ</h4>
+                        <!-- blue-button arrow -->
+                        <div class="button-block  button-block__width-all">
+                            <!-- <a class="scroll-to" href="#chips"> -->
+                            <a href="/products/mineral.html#stenovye">
+                                <div class="button-block__blue">
+                                    <p class="font-s1 font-s1--size color--secondary">Подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer sp-v-purple">
+        <div class="container">
+            <div class="col">
+                <div class="footer__wrapper">
+
+                    <div class="footer__top-menu">
+                        <a class="font-t1 color--secondary" href="/">Главная</a>
+                        <a class="font-t1 color--secondary" href="/events.html">Новости</a>
+                        <a class="font-t1 color--secondary" href="/production.html">Производство</a>
+                        <a class="font-t1 color--secondary" href="/about.html">О компании</a>
+                        <a class="font-t1 color--secondary" href="/products.html#mineralnaya-vata">Продукция</a>
+                        <a class="font-t1 color--secondary" href="/contacts.html">Контакты</a>
+                        <a class="font-t1 color--secondary" href="/objects.html">Объекты</a>
+                    </div>
+
+                    <div class="footer__middle-menu sp-v-opacity-green">
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Сендвич-панели</p>
+                            <a class="font-t2 color--secondary"
+                                href="/products/mineral.html">С&nbsp;минеральной&nbsp;ватой</a>
+                            <a class="font-t2 color--secondary" href="/products/penopolistirol.html">С
+                                пенополистиролом</a>
+                            <a class="font-t2 color--secondary" href="/products/pir-pur.html">С PIR/PUR
+                                наполнителем</a>
+                            <a class="font-t2 color--secondary"
+                                href="/products/soundproofing.html">Звукоизоляционные</a>
+                            <a class="font-t2 color--secondary"
+                                href="/products/ventilated.html">Вентилируемые</a>
+                            <a class="font-t2 color--secondary" href="/products/seam-roofing.html">Фальцевая кровля</a>
+                        </div>
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Готовые&nbsp;решения</p>
+                            <a class="font-t2 color--secondary" href="/products/urban.html">Модульный фасад Urban</a>
+                            <a class="font-t2 color--secondary" href="/products/lskp.html">Легкосбрасываемые конструкции
+                                (ЛСК-П)</a>
+                            <a class="font-t2 color--secondary" href="/products/partitions.html">Противожарные
+                                перегородки</a>
+                        </div>
+
+                        <div class="footer__product-menu">
+                            <p class="font-s1 color--tertiary">Другая&nbsp;продукция</p>
+                            <a class="font-t2 color--secondary" href="/products/painted-steel.html">Окрашенная рулонная
+                                сталь</a>
+                            <a class="font-t2 color--secondary" href="/products/other.html">Фасонные элементы и
+                                комплектующие</a>
+                        </div>
+
+                    </div>
+
+                    <h3 class="font-h3 color--tertiary text-align-right">Оставте <a class="color--brend-orange"
+                            href="/contacts.html#form">заявку</a> и мы ответим на ваши вопросы</h3>
+
+                    <div class="footer__contact sp-t-dark-blue sp-b-burgundy">
+                        <p class="addres-geo font-t1 color--tertiary"></p>
+                        <p class="tel-geo font-t1 color--tertiary"></p>
+                    </div>
+
+                    <div class="footer__end sp-t-burgundy">
+
+                        <a href="/">
+                            <div class="footer__image">
+                                <img loading="lazy" src="/image/logo_white_40px.svg" width="155" height="50" alt="">
+                            </div>
+                        </a>
+
+                        <p class="font-t2 color--tertiary">Разработка DoubleViStudio</p>
+
+                        <div class="footer__social">
+                            <a href="https://zen.yandex.ru/id/61812d81c83c0927b2aadb28" target="_blank">
+                                <div class="footer__image">
+                                    <img loading="lazy" src="/image/icon_dzen.svg" alt="" width="24" height="24">
+                                </div>
+                            </a>
+                            <a href="https://t.me/tehnostil" target="_blank">
+                                <div class="footer__image">
+                                    <img loading="lazy" src="/image/icon_telegram.svg" alt="" width="24" height="24">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="/script/script.js"></script>
+</body>
+
+</html>
