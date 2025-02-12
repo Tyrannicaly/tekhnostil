@@ -3,12 +3,12 @@ import sys
 import os
 
 def fix_paths(html_content):
-    # Исправляем пути в тегах img
-    html_content = re.sub(r'src="/image/', 'src="image/', html_content)
-    
-    # Исправляем пути в тегах a (кроме внешних ссылок)
-    html_content = re.sub(r'href="/(?!/)([^"]*)"', r'href="\1"', html_content)
-    
+    # Исправляем пути в тегах img: добавляем ../ перед image/
+    html_content = re.sub(
+        r'src="(/?image/)',  # Ищем src="/image/ или src="image/
+        r'src="../image/',   # Заменяем на src="../image/
+        html_content
+    )
     return html_content
 
 def main():
